@@ -1,0 +1,816 @@
+<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="4.0.0">Jekyll</generator><link href="https://wakemei.com/feed.xml" rel="self" type="application/atom+xml" /><link href="https://wakemei.com/" rel="alternate" type="text/html" /><updated>2019-11-22T02:40:26+07:00</updated><id>https://wakemei.com/feed.xml</id><title type="html">Analysis</title><subtitle>EDA, ML, Data Mining</subtitle><author><name>Will Nguyen</name></author><entry><title type="html">EDA YouTube channels in Vietnam</title><link href="https://wakemei.com/eda/channels/" rel="alternate" type="text/html" title="EDA YouTube channels in Vietnam" /><published>2019-11-01T00:00:00+07:00</published><updated>2019-11-01T00:00:00+07:00</updated><id>https://wakemei.com/eda/channels</id><content type="html" xml:base="https://wakemei.com/eda/channels/">&lt;h3 id=&quot;table-of-content&quot;&gt;Table of content&lt;/h3&gt;
+&lt;div id=&quot;toc&quot; class=&quot;toc small&quot;&gt;&lt;ul class=&quot;toc-item&quot;&gt;&lt;li&gt;&lt;span&gt;&lt;i class=&quot;fa fa-fw fa-caret-down&quot;&gt;&lt;/i&gt;&lt;a href=&quot;#EDA-YouTube-channels-in-Vietnam&quot; data-toc-modified-id=&quot;EDA-YouTube-channels-in-Vietnam-1&quot;&gt;&lt;span class=&quot;toc-item-num&quot;&gt;1&amp;nbsp;&amp;nbsp;&lt;/span&gt;EDA YouTube channels in Vietnam&lt;/a&gt;&lt;/span&gt;&lt;ul class=&quot;toc-item&quot;&gt;&lt;li&gt;&lt;span&gt;&lt;i class=&quot;fa fa-fw&quot;&gt;&lt;/i&gt;&lt;a href=&quot;#Goals-of-the-analysis&quot; data-toc-modified-id=&quot;Goals-of-the-analysis-1.1&quot;&gt;&lt;span class=&quot;toc-item-num&quot;&gt;1.1&amp;nbsp;&amp;nbsp;&lt;/span&gt;Goals of the analysis&lt;/a&gt;&lt;/span&gt;&lt;/li&gt;&lt;li&gt;&lt;span&gt;&lt;i class=&quot;fa fa-fw fa-caret-down&quot;&gt;&lt;/i&gt;&lt;a href=&quot;#General-analysis&quot; data-toc-modified-id=&quot;General-analysis-1.2&quot;&gt;&lt;span class=&quot;toc-item-num&quot;&gt;1.2&amp;nbsp;&amp;nbsp;&lt;/span&gt;General analysis&lt;/a&gt;&lt;/span&gt;&lt;ul class=&quot;toc-item&quot;&gt;&lt;li&gt;&lt;span&gt;&lt;i class=&quot;fa fa-fw&quot;&gt;&lt;/i&gt;&lt;a href=&quot;#Channels-with-most-subscribers.&quot; data-toc-modified-id=&quot;Channels-with-most-subscribers.-1.2.1&quot;&gt;&lt;span class=&quot;toc-item-num&quot;&gt;1.2.1&amp;nbsp;&amp;nbsp;&lt;/span&gt;Channels with most subscribers.&lt;/a&gt;&lt;/span&gt;&lt;/li&gt;&lt;li&gt;&lt;span&gt;&lt;i class=&quot;fa fa-fw&quot;&gt;&lt;/i&gt;&lt;a href=&quot;#Number-of-subscribers-vs.-views&quot; data-toc-modified-id=&quot;Number-of-subscribers-vs.-views-1.2.2&quot;&gt;&lt;span class=&quot;toc-item-num&quot;&gt;1.2.2&amp;nbsp;&amp;nbsp;&lt;/span&gt;Number of subscribers vs. views&lt;/a&gt;&lt;/span&gt;&lt;/li&gt;&lt;li&gt;&lt;span&gt;&lt;i class=&quot;fa fa-fw&quot;&gt;&lt;/i&gt;&lt;a href=&quot;#Number-of-videos-vs.-views&quot; data-toc-modified-id=&quot;Number-of-videos-vs.-views-1.2.3&quot;&gt;&lt;span class=&quot;toc-item-num&quot;&gt;1.2.3&amp;nbsp;&amp;nbsp;&lt;/span&gt;Number of videos vs. views&lt;/a&gt;&lt;/span&gt;&lt;/li&gt;&lt;li&gt;&lt;span&gt;&lt;i class=&quot;fa fa-fw&quot;&gt;&lt;/i&gt;&lt;a href=&quot;#Category-per-channels&quot; data-toc-modified-id=&quot;Category-per-channels-1.2.4&quot;&gt;&lt;span class=&quot;toc-item-num&quot;&gt;1.2.4&amp;nbsp;&amp;nbsp;&lt;/span&gt;Category per channels&lt;/a&gt;&lt;/span&gt;&lt;/li&gt;&lt;li&gt;&lt;span&gt;&lt;i class=&quot;fa fa-fw&quot;&gt;&lt;/i&gt;&lt;a href=&quot;#Channel-which-still-keep-up-or-thrive-fast-in-the-short-time.&quot; data-toc-modified-id=&quot;Channel-which-still-keep-up-or-thrive-fast-in-the-short-time.-1.2.5&quot;&gt;&lt;span class=&quot;toc-item-num&quot;&gt;1.2.5&amp;nbsp;&amp;nbsp;&lt;/span&gt;Channel which still keep up or thrive fast in the short time.&lt;/a&gt;&lt;/span&gt;&lt;/li&gt;&lt;li&gt;&lt;span&gt;&lt;i class=&quot;fa fa-fw&quot;&gt;&lt;/i&gt;&lt;a href=&quot;#Channels-with-less-video-but-great-views&quot; data-toc-modified-id=&quot;Channels-with-less-video-but-great-views-1.2.6&quot;&gt;&lt;span class=&quot;toc-item-num&quot;&gt;1.2.6&amp;nbsp;&amp;nbsp;&lt;/span&gt;Channels with less video but great views&lt;/a&gt;&lt;/span&gt;&lt;/li&gt;&lt;/ul&gt;&lt;/li&gt;&lt;li&gt;&lt;span&gt;&lt;i class=&quot;fa fa-fw&quot;&gt;&lt;/i&gt;&lt;a href=&quot;#More-specific-on-Entertainment&quot; data-toc-modified-id=&quot;More-specific-on-Entertainment-1.3&quot;&gt;&lt;span class=&quot;toc-item-num&quot;&gt;1.3&amp;nbsp;&amp;nbsp;&lt;/span&gt;More specific on Entertainment&lt;/a&gt;&lt;/span&gt;&lt;/li&gt;&lt;li&gt;&lt;span&gt;&lt;i class=&quot;fa fa-fw&quot;&gt;&lt;/i&gt;&lt;a href=&quot;#More-specific-on-Eduction&quot; data-toc-modified-id=&quot;More-specific-on-Eduction-1.4&quot;&gt;&lt;span class=&quot;toc-item-num&quot;&gt;1.4&amp;nbsp;&amp;nbsp;&lt;/span&gt;More specific on Eduction&lt;/a&gt;&lt;/span&gt;&lt;/li&gt;&lt;li&gt;&lt;span&gt;&lt;i class=&quot;fa fa-fw fa-caret-down&quot;&gt;&lt;/i&gt;&lt;a href=&quot;#Keywords&quot; data-toc-modified-id=&quot;Keywords-1.5&quot;&gt;&lt;span class=&quot;toc-item-num&quot;&gt;1.5&amp;nbsp;&amp;nbsp;&lt;/span&gt;Keywords&lt;/a&gt;&lt;/span&gt;&lt;ul class=&quot;toc-item&quot;&gt;&lt;li&gt;&lt;span&gt;&lt;i class=&quot;fa fa-fw&quot;&gt;&lt;/i&gt;&lt;a href=&quot;#Wordcloud&quot; data-toc-modified-id=&quot;Wordcloud-1.5.1&quot;&gt;&lt;span class=&quot;toc-item-num&quot;&gt;1.5.1&amp;nbsp;&amp;nbsp;&lt;/span&gt;Wordcloud&lt;/a&gt;&lt;/span&gt;&lt;/li&gt;&lt;/ul&gt;&lt;/li&gt;&lt;li&gt;&lt;span&gt;&lt;i class=&quot;fa fa-fw fa-caret-down&quot;&gt;&lt;/i&gt;&lt;a href=&quot;#Conclusion&quot; data-toc-modified-id=&quot;Conclusion-1.6&quot;&gt;&lt;span class=&quot;toc-item-num&quot;&gt;1.6&amp;nbsp;&amp;nbsp;&lt;/span&gt;Conclusion&lt;/a&gt;&lt;/span&gt;&lt;ul class=&quot;toc-item&quot;&gt;&lt;li&gt;&lt;span&gt;&lt;i class=&quot;fa fa-fw&quot;&gt;&lt;/i&gt;&lt;a href=&quot;#Benefits.&quot; data-toc-modified-id=&quot;Benefits.-1.6.1&quot;&gt;&lt;span class=&quot;toc-item-num&quot;&gt;1.6.1&amp;nbsp;&amp;nbsp;&lt;/span&gt;Benefits.&lt;/a&gt;&lt;/span&gt;&lt;/li&gt;&lt;li&gt;&lt;span&gt;&lt;i class=&quot;fa fa-fw&quot;&gt;&lt;/i&gt;&lt;a href=&quot;#About-the-content,-just-my-opinion.&quot; data-toc-modified-id=&quot;About-the-content,-just-my-opinion.-1.6.2&quot;&gt;&lt;span class=&quot;toc-item-num&quot;&gt;1.6.2&amp;nbsp;&amp;nbsp;&lt;/span&gt;About the content, just my opinion.&lt;/a&gt;&lt;/span&gt;&lt;/li&gt;&lt;/ul&gt;&lt;/li&gt;&lt;/ul&gt;&lt;/li&gt;
+&lt;li&gt;2. Tool for query channels&lt;/li&gt;
+&lt;/ul&gt;&lt;/div&gt;
+
+&lt;p&gt;Dataset from top 200,000 channels in Vietnam - Nov 2019 - ver.1&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;Note: This purpose of analysis for study research. Focus on dataset Vietnam only. Sorry, if this analysis have some error and mistake in research. Also data is vast, some data might miss in this analysis&lt;/strong&gt;&lt;/p&gt;
+
+&lt;p&gt;Reference: &lt;a href=&quot;https://www.omnicoreagency.com/youtube-statistics/&quot; target=&quot;_blank&quot; rel=&quot;nofollow&quot;&gt;https://www.omnicoreagency.com/youtube-statistics/&lt;/a&gt; for some facts.&lt;/p&gt;
+
+&lt;p&gt;The number of people watch YouTube keep increasing every year. Include childrens, teenagers, adults, olders. But what are they watching about? Because YouTube channels in Vietnam are so many, and variety. It’s hard for us to see the overall picture of YouTube Vietnam.&lt;/p&gt;
+
+&lt;h2 id=&quot;i-goals-of-the-analysis&quot;&gt;I. Goals of the analysis&lt;/h2&gt;
+
+&lt;p&gt;Most of user often see ‘subscribers number’, and think that channels have most of great videos. But if we look other factors, we might find something interest.&lt;/p&gt;
+
+&lt;p&gt;Here is assumptions, and I would like to verify those assumptions:&lt;/p&gt;
+
+&lt;ol&gt;
+  &lt;li&gt;Is there any &lt;strong&gt;great channels&lt;/strong&gt; that we didn’t know they exists.
+    &lt;ul&gt;
+      &lt;li&gt;Based on other factor beside ‘subscribers’ (like views, or view count/joined date, …)?&lt;/li&gt;
+      &lt;li&gt;Based on categories instead of general factor?&lt;/li&gt;
+      &lt;li&gt;Based on keywords?&lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/li&gt;
+  &lt;li&gt;Which channel category (e.g. Entertainment, Gaming, Comedy, etc.) has the largest number views, subscribes, view count/joined date…?
+    &lt;ul&gt;
+      &lt;li&gt;The relative between categories?&lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/li&gt;
+  &lt;li&gt;Why that channels have large view count?
+    &lt;ul&gt;
+      &lt;li&gt;
+        &lt;p&gt;Something cause view_count on kid channels always larger than other channels. Children have most free time, might be use their childhood to watch YouTube? or something else?&lt;/p&gt;
+      &lt;/li&gt;
+      &lt;li&gt;Teenager have less time than the children to watch, but still have time to watch YouTube so much?&lt;/li&gt;
+      &lt;li&gt;Adults have less time to watch, because they have to work?&lt;/li&gt;
+      &lt;li&gt;Older often watch TV channel?&lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/li&gt;
+&lt;/ol&gt;
+
+&lt;p&gt;&lt;strong&gt;P.S:&lt;/strong&gt;&lt;/p&gt;
+
+&lt;p&gt;If your YouTube homepage is bore and nothing fun to watch, you can go to analysis below and find the interesting channels and subscribe. And your YouTube will have all the best video to watch. :)&lt;/p&gt;
+
+&lt;div class=&quot;language-python highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;c1&quot;&gt;#invite people for the Kaggle party
+&lt;/span&gt;&lt;span class=&quot;kn&quot;&gt;from&lt;/span&gt; &lt;span class=&quot;nn&quot;&gt;IPython.core.interactiveshell&lt;/span&gt; &lt;span class=&quot;kn&quot;&gt;import&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;InteractiveShell&lt;/span&gt;
+&lt;span class=&quot;n&quot;&gt;InteractiveShell&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;ast_node_interactivity&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;s&quot;&gt;&quot;all&quot;&lt;/span&gt;
+
+&lt;span class=&quot;kn&quot;&gt;import&lt;/span&gt; &lt;span class=&quot;nn&quot;&gt;pandas&lt;/span&gt; &lt;span class=&quot;k&quot;&gt;as&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;pd&lt;/span&gt;
+&lt;span class=&quot;kn&quot;&gt;import&lt;/span&gt; &lt;span class=&quot;nn&quot;&gt;matplotlib.pyplot&lt;/span&gt; &lt;span class=&quot;k&quot;&gt;as&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;plt&lt;/span&gt;
+&lt;span class=&quot;kn&quot;&gt;import&lt;/span&gt; &lt;span class=&quot;nn&quot;&gt;seaborn&lt;/span&gt; &lt;span class=&quot;k&quot;&gt;as&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;sns&lt;/span&gt;
+&lt;span class=&quot;kn&quot;&gt;import&lt;/span&gt; &lt;span class=&quot;nn&quot;&gt;numpy&lt;/span&gt; &lt;span class=&quot;k&quot;&gt;as&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;np&lt;/span&gt;
+&lt;span class=&quot;kn&quot;&gt;from&lt;/span&gt; &lt;span class=&quot;nn&quot;&gt;scipy.stats&lt;/span&gt; &lt;span class=&quot;kn&quot;&gt;import&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;norm&lt;/span&gt;
+&lt;span class=&quot;kn&quot;&gt;from&lt;/span&gt; &lt;span class=&quot;nn&quot;&gt;sklearn.preprocessing&lt;/span&gt; &lt;span class=&quot;kn&quot;&gt;import&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;StandardScaler&lt;/span&gt;
+&lt;span class=&quot;kn&quot;&gt;from&lt;/span&gt; &lt;span class=&quot;nn&quot;&gt;scipy&lt;/span&gt; &lt;span class=&quot;kn&quot;&gt;import&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;stats&lt;/span&gt;
+&lt;span class=&quot;kn&quot;&gt;import&lt;/span&gt; &lt;span class=&quot;nn&quot;&gt;warnings&lt;/span&gt;
+&lt;span class=&quot;kn&quot;&gt;from&lt;/span&gt; &lt;span class=&quot;nn&quot;&gt;collections&lt;/span&gt; &lt;span class=&quot;kn&quot;&gt;import&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;Counter&lt;/span&gt;
+&lt;span class=&quot;kn&quot;&gt;import&lt;/span&gt; &lt;span class=&quot;nn&quot;&gt;wordcloud&lt;/span&gt;
+&lt;span class=&quot;kn&quot;&gt;from&lt;/span&gt; &lt;span class=&quot;nn&quot;&gt;underthesea&lt;/span&gt; &lt;span class=&quot;kn&quot;&gt;import&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;word_tokenize&lt;/span&gt;
+
+&lt;span class=&quot;n&quot;&gt;warnings&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;filterwarnings&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;'ignore'&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;
+&lt;span class=&quot;o&quot;&gt;%&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;matplotlib&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;inline&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;div class=&quot;language-python highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;c1&quot;&gt;# Load dataset, which already cleansing data.
+&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;df_train&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;pd&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;read_excel&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;'youtube_channel.xlsx'&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;div class=&quot;language-python highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;n&quot;&gt;df_train&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;columns&lt;/span&gt;
+&lt;span class=&quot;n&quot;&gt;df_train&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;head&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;()&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;Index(['_id', 'url', 'name', 'subscribers_text', 'video_count', 'view_count',
+       'category', 'keywords', 'parent', 'subscribers_infer', 'r_view_p_sub',
+       'r_view_p_joined', 'r_view_p_vid', 'r_joined_p_vid', 'joined_date',
+       'joined_date_seconds', 'name_joined', 'name_vid', 'name_sub_vid',
+       'name_sub', 'name_url'],
+      dtype='object')
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;div&gt;
+&lt;style scoped=&quot;&quot;&gt;
+    .dataframe tbody tr th:only-of-type {
+        vertical-align: middle;
+    }
+
+    .dataframe tbody tr th {
+        vertical-align: top;
+    }
+
+    .dataframe thead th {
+        text-align: right;
+    }
+&lt;/style&gt;
+&lt;table border=&quot;1&quot; class=&quot;dataframe&quot;&gt;
+  &lt;thead&gt;
+    &lt;tr style=&quot;text-align: right;&quot;&gt;
+      &lt;th&gt;&lt;/th&gt;
+      &lt;th&gt;_id&lt;/th&gt;
+      &lt;th&gt;url&lt;/th&gt;
+      &lt;th&gt;name&lt;/th&gt;
+      &lt;th&gt;subscribers_text&lt;/th&gt;
+      &lt;th&gt;video_count&lt;/th&gt;
+      &lt;th&gt;view_count&lt;/th&gt;
+      &lt;th&gt;category&lt;/th&gt;
+      &lt;th&gt;keywords&lt;/th&gt;
+      &lt;th&gt;parent&lt;/th&gt;
+      &lt;th&gt;subscribers_infer&lt;/th&gt;
+      &lt;th&gt;...&lt;/th&gt;
+      &lt;th&gt;r_view_p_joined&lt;/th&gt;
+      &lt;th&gt;r_view_p_vid&lt;/th&gt;
+      &lt;th&gt;r_joined_p_vid&lt;/th&gt;
+      &lt;th&gt;joined_date&lt;/th&gt;
+      &lt;th&gt;joined_date_seconds&lt;/th&gt;
+      &lt;th&gt;name_joined&lt;/th&gt;
+      &lt;th&gt;name_vid&lt;/th&gt;
+      &lt;th&gt;name_sub_vid&lt;/th&gt;
+      &lt;th&gt;name_sub&lt;/th&gt;
+      &lt;th&gt;name_url&lt;/th&gt;
+    &lt;/tr&gt;
+  &lt;/thead&gt;
+  &lt;tbody&gt;
+    &lt;tr&gt;
+      &lt;th&gt;0&lt;/th&gt;
+      &lt;td&gt;5dd01bfac94e8ed89c37ea91&lt;/td&gt;
+      &lt;td&gt;https://www.youtube.com/channel/UC5ezaYrzZpyIt...&lt;/td&gt;
+      &lt;td&gt;POPS Kids&lt;/td&gt;
+      &lt;td&gt;9.71M&lt;/td&gt;
+      &lt;td&gt;7085.0&lt;/td&gt;
+      &lt;td&gt;9411018577&lt;/td&gt;
+      &lt;td&gt;Film &amp;amp; Animation&lt;/td&gt;
+      &lt;td&gt;&quot;phim hoat hinh&quot; &quot;ca nhac thieu nhi&quot; &quot;kenh thi...&lt;/td&gt;
+      &lt;td&gt;https://www.youtube.com/channel/UC5ezaYrzZpyIt...&lt;/td&gt;
+      &lt;td&gt;9710000&lt;/td&gt;
+      &lt;td&gt;...&lt;/td&gt;
+      &lt;td&gt;51018&lt;/td&gt;
+      &lt;td&gt;1328301&lt;/td&gt;
+      &lt;td&gt;26&lt;/td&gt;
+      &lt;td&gt;2014-01-14&lt;/td&gt;
+      &lt;td&gt;2014-01-14&lt;/td&gt;
+      &lt;td&gt;POPS Kids (joined 2014-01-14)&lt;/td&gt;
+      &lt;td&gt;POPS Kids (7,085 videos)&lt;/td&gt;
+      &lt;td&gt;POPS Kids (9.71M - 7,085 videos)&lt;/td&gt;
+      &lt;td&gt;POPS Kids (9.71M)&lt;/td&gt;
+      &lt;td&gt;POPS Kids (https://www.youtube.com/channel/UC5...&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;th&gt;1&lt;/th&gt;
+      &lt;td&gt;5dd01bfac94e8ed89c37ea9b&lt;/td&gt;
+      &lt;td&gt;https://www.youtube.com/channel/UCUgXK2UjZ8G_E...&lt;/td&gt;
+      &lt;td&gt;POPS MUSIC&lt;/td&gt;
+      &lt;td&gt;7.29M&lt;/td&gt;
+      &lt;td&gt;25462.0&lt;/td&gt;
+      &lt;td&gt;6610506521&lt;/td&gt;
+      &lt;td&gt;Music&lt;/td&gt;
+      &lt;td&gt;&quot;pops music&quot; &quot;pops vietnam&quot; &quot;nhac viet 2019&quot; &quot;...&lt;/td&gt;
+      &lt;td&gt;https://www.youtube.com/channel/UCUgXK2UjZ8G_E...&lt;/td&gt;
+      &lt;td&gt;7290000&lt;/td&gt;
+      &lt;td&gt;...&lt;/td&gt;
+      &lt;td&gt;31485&lt;/td&gt;
+      &lt;td&gt;259622&lt;/td&gt;
+      &lt;td&gt;8&lt;/td&gt;
+      &lt;td&gt;2013-03-25&lt;/td&gt;
+      &lt;td&gt;2013-03-25&lt;/td&gt;
+      &lt;td&gt;POPS MUSIC (joined 2013-03-25)&lt;/td&gt;
+      &lt;td&gt;POPS MUSIC (25,462 videos)&lt;/td&gt;
+      &lt;td&gt;POPS MUSIC (7.29M - 25,462 videos)&lt;/td&gt;
+      &lt;td&gt;POPS MUSIC (7.29M)&lt;/td&gt;
+      &lt;td&gt;POPS MUSIC (https://www.youtube.com/channel/UC...&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;th&gt;2&lt;/th&gt;
+      &lt;td&gt;5dd01bfac94e8ed89c37eaa4&lt;/td&gt;
+      &lt;td&gt;https://www.youtube.com/channel/UC6eq3sR4CtbvG...&lt;/td&gt;
+      &lt;td&gt;Kênh Thiếu Nhi - BHMEDIA&lt;/td&gt;
+      &lt;td&gt;6.06M&lt;/td&gt;
+      &lt;td&gt;6078.0&lt;/td&gt;
+      &lt;td&gt;4307433103&lt;/td&gt;
+      &lt;td&gt;Music&lt;/td&gt;
+      &lt;td&gt;&quot;kenh thieu nhi bhmedia&quot; &quot;nhac thieu nhi&quot; &quot;thi...&lt;/td&gt;
+      &lt;td&gt;https://www.youtube.com/channel/UC6eq3sR4CtbvG...&lt;/td&gt;
+      &lt;td&gt;6060000&lt;/td&gt;
+      &lt;td&gt;...&lt;/td&gt;
+      &lt;td&gt;24631&lt;/td&gt;
+      &lt;td&gt;708692&lt;/td&gt;
+      &lt;td&gt;28&lt;/td&gt;
+      &lt;td&gt;2014-05-05&lt;/td&gt;
+      &lt;td&gt;2014-05-05&lt;/td&gt;
+      &lt;td&gt;Kênh Thiếu Nhi - BHMEDIA (joined 2014-05-05)&lt;/td&gt;
+      &lt;td&gt;Kênh Thiếu Nhi - BHMEDIA (6,078 videos)&lt;/td&gt;
+      &lt;td&gt;Kênh Thiếu Nhi - BHMEDIA (6.06M - 6,078 videos)&lt;/td&gt;
+      &lt;td&gt;Kênh Thiếu Nhi - BHMEDIA (6.06M)&lt;/td&gt;
+      &lt;td&gt;Kênh Thiếu Nhi - BHMEDIA (https://www.youtube....&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;th&gt;3&lt;/th&gt;
+      &lt;td&gt;5dd01bfac94e8ed89c37ea9e&lt;/td&gt;
+      &lt;td&gt;https://www.youtube.com/channel/UCSJsjCiTl2lou...&lt;/td&gt;
+      &lt;td&gt;Thơ Nguyễn&lt;/td&gt;
+      &lt;td&gt;6.91M&lt;/td&gt;
+      &lt;td&gt;895.0&lt;/td&gt;
+      &lt;td&gt;4227680361&lt;/td&gt;
+      &lt;td&gt;People &amp;amp; Blogs&lt;/td&gt;
+      &lt;td&gt;&quot;Thơ Nguyễn&quot;&lt;/td&gt;
+      &lt;td&gt;https://www.youtube.com/channel/UCSJsjCiTl2lou...&lt;/td&gt;
+      &lt;td&gt;6910000&lt;/td&gt;
+      &lt;td&gt;...&lt;/td&gt;
+      &lt;td&gt;36138&lt;/td&gt;
+      &lt;td&gt;4723665&lt;/td&gt;
+      &lt;td&gt;130&lt;/td&gt;
+      &lt;td&gt;2016-03-05&lt;/td&gt;
+      &lt;td&gt;2016-03-05&lt;/td&gt;
+      &lt;td&gt;Thơ Nguyễn (joined 2016-03-05)&lt;/td&gt;
+      &lt;td&gt;Thơ Nguyễn (895 videos)&lt;/td&gt;
+      &lt;td&gt;Thơ Nguyễn (6.91M - 895 videos)&lt;/td&gt;
+      &lt;td&gt;Thơ Nguyễn (6.91M)&lt;/td&gt;
+      &lt;td&gt;Thơ Nguyễn (https://www.youtube.com/channel/UC...&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;th&gt;4&lt;/th&gt;
+      &lt;td&gt;5dd01bfac94e8ed89c37ea8b&lt;/td&gt;
+      &lt;td&gt;https://www.youtube.com/channel/UC0jDoh3tVXCaq...&lt;/td&gt;
+      &lt;td&gt;FAP TV&lt;/td&gt;
+      &lt;td&gt;10.3M&lt;/td&gt;
+      &lt;td&gt;447.0&lt;/td&gt;
+      &lt;td&gt;4034410388&lt;/td&gt;
+      &lt;td&gt;Film &amp;amp; Animation&lt;/td&gt;
+      &lt;td&gt;&quot;FAP TV&quot; &quot;Com nguoi&quot; &quot;phim hai&quot; &quot;fap tivi&quot; faptv&lt;/td&gt;
+      &lt;td&gt;https://www.youtube.com/channel/UC0jDoh3tVXCaq...&lt;/td&gt;
+      &lt;td&gt;10300000&lt;/td&gt;
+      &lt;td&gt;...&lt;/td&gt;
+      &lt;td&gt;22320&lt;/td&gt;
+      &lt;td&gt;9025526&lt;/td&gt;
+      &lt;td&gt;404&lt;/td&gt;
+      &lt;td&gt;2014-02-26&lt;/td&gt;
+      &lt;td&gt;2014-02-26&lt;/td&gt;
+      &lt;td&gt;FAP TV (joined 2014-02-26)&lt;/td&gt;
+      &lt;td&gt;FAP TV (447 videos)&lt;/td&gt;
+      &lt;td&gt;FAP TV (10.3M - 447 videos)&lt;/td&gt;
+      &lt;td&gt;FAP TV (10.3M)&lt;/td&gt;
+      &lt;td&gt;FAP TV (https://www.youtube.com/channel/UC0jDo...&lt;/td&gt;
+    &lt;/tr&gt;
+  &lt;/tbody&gt;
+&lt;/table&gt;
+&lt;p&gt;5 rows × 21 columns&lt;/p&gt;
+&lt;/div&gt;
+
+&lt;div class=&quot;language-python highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;n&quot;&gt;df_train&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;describe&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;()&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;div&gt;
+&lt;style scoped=&quot;&quot;&gt;
+    .dataframe tbody tr th:only-of-type {
+        vertical-align: middle;
+    }
+
+    .dataframe tbody tr th {
+        vertical-align: top;
+    }
+
+    .dataframe thead th {
+        text-align: right;
+    }
+&lt;/style&gt;
+&lt;table border=&quot;1&quot; class=&quot;dataframe&quot;&gt;
+  &lt;thead&gt;
+    &lt;tr style=&quot;text-align: right;&quot;&gt;
+      &lt;th&gt;&lt;/th&gt;
+      &lt;th&gt;view_count&lt;/th&gt;
+      &lt;th&gt;subscribers_infer&lt;/th&gt;
+      &lt;th&gt;r_view_p_sub&lt;/th&gt;
+      &lt;th&gt;r_view_p_joined&lt;/th&gt;
+      &lt;th&gt;r_view_p_vid&lt;/th&gt;
+      &lt;th&gt;r_joined_p_vid&lt;/th&gt;
+    &lt;/tr&gt;
+  &lt;/thead&gt;
+  &lt;tbody&gt;
+    &lt;tr&gt;
+      &lt;th&gt;count&lt;/th&gt;
+      &lt;td&gt;2.160700e+04&lt;/td&gt;
+      &lt;td&gt;2.160700e+04&lt;/td&gt;
+      &lt;td&gt;21607.000000&lt;/td&gt;
+      &lt;td&gt;21607.000000&lt;/td&gt;
+      &lt;td&gt;2.160700e+04&lt;/td&gt;
+      &lt;td&gt;21607.000000&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;th&gt;mean&lt;/th&gt;
+      &lt;td&gt;2.668484e+07&lt;/td&gt;
+      &lt;td&gt;8.124845e+04&lt;/td&gt;
+      &lt;td&gt;407.559124&lt;/td&gt;
+      &lt;td&gt;249.443236&lt;/td&gt;
+      &lt;td&gt;1.667015e+05&lt;/td&gt;
+      &lt;td&gt;2839.976674&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;th&gt;std&lt;/th&gt;
+      &lt;td&gt;1.557322e+08&lt;/td&gt;
+      &lt;td&gt;3.213656e+05&lt;/td&gt;
+      &lt;td&gt;1115.933585&lt;/td&gt;
+      &lt;td&gt;1209.028898&lt;/td&gt;
+      &lt;td&gt;7.942098e+05&lt;/td&gt;
+      &lt;td&gt;9203.371213&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;th&gt;min&lt;/th&gt;
+      &lt;td&gt;2.896000e+03&lt;/td&gt;
+      &lt;td&gt;1.200000e+01&lt;/td&gt;
+      &lt;td&gt;0.000000&lt;/td&gt;
+      &lt;td&gt;1.000000&lt;/td&gt;
+      &lt;td&gt;0.000000e+00&lt;/td&gt;
+      &lt;td&gt;0.000000&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;th&gt;25%&lt;/th&gt;
+      &lt;td&gt;7.875605e+05&lt;/td&gt;
+      &lt;td&gt;2.740000e+03&lt;/td&gt;
+      &lt;td&gt;178.000000&lt;/td&gt;
+      &lt;td&gt;8.000000&lt;/td&gt;
+      &lt;td&gt;7.585500e+03&lt;/td&gt;
+      &lt;td&gt;282.000000&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;th&gt;50%&lt;/th&gt;
+      &lt;td&gt;2.274931e+06&lt;/td&gt;
+      &lt;td&gt;8.771000e+03&lt;/td&gt;
+      &lt;td&gt;345.000000&lt;/td&gt;
+      &lt;td&gt;24.000000&lt;/td&gt;
+      &lt;td&gt;2.470900e+04&lt;/td&gt;
+      &lt;td&gt;759.000000&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;th&gt;75%&lt;/th&gt;
+      &lt;td&gt;9.681355e+06&lt;/td&gt;
+      &lt;td&gt;4.005500e+04&lt;/td&gt;
+      &lt;td&gt;393.000000&lt;/td&gt;
+      &lt;td&gt;98.000000&lt;/td&gt;
+      &lt;td&gt;8.770500e+04&lt;/td&gt;
+      &lt;td&gt;2110.000000&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;th&gt;max&lt;/th&gt;
+      &lt;td&gt;9.411019e+09&lt;/td&gt;
+      &lt;td&gt;1.030000e+07&lt;/td&gt;
+      &lt;td&gt;81890.000000&lt;/td&gt;
+      &lt;td&gt;51018.000000&lt;/td&gt;
+      &lt;td&gt;4.304108e+07&lt;/td&gt;
+      &lt;td&gt;274752.000000&lt;/td&gt;
+    &lt;/tr&gt;
+  &lt;/tbody&gt;
+&lt;/table&gt;
+&lt;/div&gt;
+
+&lt;h2 id=&quot;general-analysis&quot;&gt;General analysis&lt;/h2&gt;
+
+&lt;h3 id=&quot;channels-with-most-subscribers&quot;&gt;Channels with most subscribers.&lt;/h3&gt;
+
+&lt;p&gt;Nothing to comment. Just a fact.&lt;/p&gt;
+
+&lt;p&gt;Note: Other channels with hidden subscriber stats. Note symbol ~ is (~ guess number).&lt;/p&gt;
+
+&lt;div class=&quot;language-python highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;n&quot;&gt;cdf&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;df_train&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;sort_values&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&quot;subscribers_infer&quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;ascending&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;=&lt;/span&gt;&lt;span class=&quot;bp&quot;&gt;False&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;head&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;mi&quot;&gt;30&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;
+
+&lt;span class=&quot;n&quot;&gt;fig&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;ax&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;plt&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;subplots&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;figsize&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;=&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;mi&quot;&gt;10&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt;&lt;span class=&quot;mi&quot;&gt;10&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;))&lt;/span&gt;
+&lt;span class=&quot;n&quot;&gt;_&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;sns&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;barplot&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;x&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;=&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&quot;subscribers_infer&quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;y&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;=&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&quot;name_sub_vid&quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;data&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;=&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;cdf&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt;
+                &lt;span class=&quot;n&quot;&gt;palette&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;=&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;sns&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;cubehelix_palette&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;n_colors&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;=&lt;/span&gt;&lt;span class=&quot;mi&quot;&gt;30&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;reverse&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;=&lt;/span&gt;&lt;span class=&quot;bp&quot;&gt;True&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;),&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;ax&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;=&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;ax&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;
+&lt;span class=&quot;n&quot;&gt;_&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;ax&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nb&quot;&gt;set&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;xlabel&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;=&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&quot;No. of subscribers&quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;ylabel&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;=&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&quot;Channel (Subscribers)&quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;p&gt;&lt;img src=&quot;/assets/images/2019_11_01_channels/channels_11_0.png&quot; alt=&quot;png&quot; /&gt;&lt;/p&gt;
+
+&lt;h3 id=&quot;number-of-subscribers-vs-views&quot;&gt;Number of subscribers vs. views&lt;/h3&gt;
+
+&lt;p&gt;Sort DESC by subscribers, compare with view_count. And all top channels belongs to Entertainment category&lt;/p&gt;
+
+&lt;p&gt;All the kid channels quite have large no. of view than other channels. Might be, they have most time to watch.&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;POPS Kids (large no. of videos)&lt;/li&gt;
+  &lt;li&gt;Bé Bún - Bé Bắp&lt;/li&gt;
+  &lt;li&gt;Thơ Nguyễn&lt;/li&gt;
+  &lt;li&gt;Kênh Thiếu Nhi - BHMEDIA (large no. of videos)&lt;/li&gt;
+  &lt;li&gt;Kid Studio (large no. of videos)&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;Channels have a few videos, but have large no. of views. (Most video attract a lot of views.)&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;Vanh Leg&lt;/li&gt;
+  &lt;li&gt;Sơn Tùng M-TP Oficial&lt;/li&gt;
+  &lt;li&gt;Hau Hoang&lt;/li&gt;
+  &lt;li&gt;K-ICM Offical&lt;/li&gt;
+  &lt;li&gt;iGAMING TV&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;div class=&quot;language-python highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;n&quot;&gt;cdf&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;df_train&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;sort_values&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&quot;subscribers_infer&quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;ascending&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;=&lt;/span&gt;&lt;span class=&quot;bp&quot;&gt;False&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;head&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;mi&quot;&gt;30&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;
+&lt;span class=&quot;n&quot;&gt;fig&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;ax&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;plt&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;subplots&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;figsize&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;=&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;mi&quot;&gt;12&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt;&lt;span class=&quot;mi&quot;&gt;10&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;))&lt;/span&gt;
+&lt;span class=&quot;n&quot;&gt;_&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;sns&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;barplot&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;x&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;=&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&quot;view_count&quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;y&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;=&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&quot;name_sub_vid&quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;data&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;=&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;cdf&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt;
+                &lt;span class=&quot;n&quot;&gt;palette&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;=&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;sns&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;cubehelix_palette&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;n_colors&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;=&lt;/span&gt;&lt;span class=&quot;mi&quot;&gt;30&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;reverse&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;=&lt;/span&gt;&lt;span class=&quot;bp&quot;&gt;True&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;),&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;ax&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;=&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;ax&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;
+&lt;span class=&quot;n&quot;&gt;_&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;ax&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nb&quot;&gt;set&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;xlabel&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;=&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&quot;No. of views&quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;ylabel&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;=&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&quot;Channel (Subscribers)&quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;p&gt;&lt;img src=&quot;/assets/images/2019_11_01_channels/channels_13_0.png&quot; alt=&quot;png&quot; /&gt;&lt;/p&gt;
+
+&lt;h3 id=&quot;number-of-videos-vs-views&quot;&gt;Number of videos vs. views&lt;/h3&gt;
+
+&lt;p&gt;Again, POPS MUSIC have most views.&lt;/p&gt;
+
+&lt;p&gt;Other channel comes from traditional TV.
+They start using to YouTube for broadcast because of increasing users on YouTube. Catch the trends before TV is out of date.&lt;/p&gt;
+
+&lt;div class=&quot;language-python highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;n&quot;&gt;cdf&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;df_train&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;sort_values&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&quot;video_count&quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;ascending&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;=&lt;/span&gt;&lt;span class=&quot;bp&quot;&gt;False&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;head&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;mi&quot;&gt;40&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;sort_values&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&quot;view_count&quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;ascending&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;=&lt;/span&gt;&lt;span class=&quot;bp&quot;&gt;False&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;
+
+&lt;span class=&quot;n&quot;&gt;fig&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;ax&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;plt&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;subplots&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;figsize&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;=&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;mi&quot;&gt;8&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt;&lt;span class=&quot;mi&quot;&gt;8&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;))&lt;/span&gt;
+&lt;span class=&quot;n&quot;&gt;_&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;sns&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;barplot&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;x&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;=&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&quot;view_count&quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;y&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;=&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&quot;name_vid&quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;data&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;=&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;cdf&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt;
+                &lt;span class=&quot;n&quot;&gt;palette&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;=&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;sns&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;cubehelix_palette&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;n_colors&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;=&lt;/span&gt;&lt;span class=&quot;mi&quot;&gt;40&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;reverse&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;=&lt;/span&gt;&lt;span class=&quot;bp&quot;&gt;True&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;),&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;ax&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;=&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;ax&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;
+&lt;span class=&quot;n&quot;&gt;_&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;ax&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nb&quot;&gt;set&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;xlabel&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;=&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&quot;No. of views&quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;ylabel&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;=&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&quot;Channel (No. of Videos)&quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;p&gt;&lt;img src=&quot;/assets/images/2019_11_01_channels/channels_15_0.png&quot; alt=&quot;png&quot; /&gt;&lt;/p&gt;
+
+&lt;h3 id=&quot;category-per-channels&quot;&gt;Category per channels&lt;/h3&gt;
+
+&lt;p&gt;&lt;strong&gt;Note&lt;/strong&gt;: Category ‘People &amp;amp; Blogs’ quite mix. Some of channel in this category might belongs to Education, but most of them still entertain&lt;/p&gt;
+
+&lt;p&gt;Number of channel on entertaiment:&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;People &amp;amp; Blogs&lt;/li&gt;
+  &lt;li&gt;Entertaiment&lt;/li&gt;
+  &lt;li&gt;Music&lt;/li&gt;
+  &lt;li&gt;Gaming&lt;/li&gt;
+  &lt;li&gt;Film &amp;amp; Animation&lt;/li&gt;
+  &lt;li&gt;…&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;Number of channel on education:&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;Education&lt;/li&gt;
+  &lt;li&gt;Howto &amp;amp; style&lt;/li&gt;
+  &lt;li&gt;Science &amp;amp; technology&lt;/li&gt;
+  &lt;li&gt;…&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;The ration for education (7%), entertaiment (93%)&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;Most of channel on entertainment easy to attract user for monetize than education.&lt;/li&gt;
+  &lt;li&gt;Also on kid channels.&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;div class=&quot;language-python highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;n&quot;&gt;cdf&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;df_train&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;groupby&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&quot;category&quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;size&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;()&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;reset_index&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;name&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;=&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&quot;channels&quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;sort_values&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&quot;channels&quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;ascending&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;=&lt;/span&gt;&lt;span class=&quot;bp&quot;&gt;False&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;
+&lt;span class=&quot;nb&quot;&gt;list&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;cdf&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;[&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;'category'&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;])&lt;/span&gt;
+
+&lt;span class=&quot;n&quot;&gt;fig&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;ax&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;plt&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;subplots&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;figsize&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;=&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;mi&quot;&gt;12&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt;&lt;span class=&quot;mi&quot;&gt;8&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;))&lt;/span&gt;
+&lt;span class=&quot;n&quot;&gt;_&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;sns&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;barplot&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;x&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;=&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&quot;channels&quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;y&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;=&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&quot;category&quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;data&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;=&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;cdf&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt;
+                &lt;span class=&quot;n&quot;&gt;palette&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;=&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;sns&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;cubehelix_palette&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;n_colors&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;=&lt;/span&gt;&lt;span class=&quot;mi&quot;&gt;20&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;reverse&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;=&lt;/span&gt;&lt;span class=&quot;bp&quot;&gt;True&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;),&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;ax&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;=&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;ax&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;
+&lt;span class=&quot;n&quot;&gt;_&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;ax&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nb&quot;&gt;set&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;xlabel&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;=&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&quot;No. of channels&quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;ylabel&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;=&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&quot;Category&quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;['People &amp;amp; Blogs',
+ 'Entertainment',
+ 'Music',
+ 'Gaming',
+ 'Film &amp;amp; Animation',
+ 'Education',
+ 'Howto &amp;amp; Style',
+ 'News &amp;amp; Politics',
+ 'Autos &amp;amp; Vehicles',
+ 'Science &amp;amp; Technology',
+ 'Travel &amp;amp; Events',
+ 'Sports',
+ 'Comedy',
+ 'Pets &amp;amp; Animals',
+ 'Nonprofits &amp;amp; Activism']
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;p&gt;&lt;img src=&quot;/assets/images/2019_11_01_channels/channels_17_1.png&quot; alt=&quot;png&quot; /&gt;&lt;/p&gt;
+
+&lt;h3 id=&quot;channel-which-still-keep-up-or-thrive-fast-in-the-short-time&quot;&gt;Channel which still keep up or thrive fast in the short time.&lt;/h3&gt;
+
+&lt;p&gt;Note: Dataset at Nov 2019&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;r_view_p_joined = view_count / joined_date&lt;/strong&gt;&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;if channel discontinue, view_count / increase time of joined_date =&amp;gt; decrease r_view_p_joined&lt;/li&gt;
+  &lt;li&gt;if channel thrive fast, large view_count / small time of joined_date =&amp;gt; high r_view_p_joined&lt;/li&gt;
+  &lt;li&gt;if channel still keep up, increase view_count/ increase time of joined_date =&amp;gt; r_view_p_joined keep up&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;div class=&quot;language-python highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;n&quot;&gt;cdf&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;df_train&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;sort_values&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&quot;r_view_p_joined&quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;ascending&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;=&lt;/span&gt;&lt;span class=&quot;bp&quot;&gt;False&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;head&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;mi&quot;&gt;30&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;sort_values&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&quot;joined_date_seconds&quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;ascending&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;=&lt;/span&gt;&lt;span class=&quot;bp&quot;&gt;False&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;
+&lt;span class=&quot;n&quot;&gt;fig&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;ax&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;plt&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;subplots&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;figsize&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;=&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;mi&quot;&gt;10&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt;&lt;span class=&quot;mi&quot;&gt;8&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;))&lt;/span&gt;
+&lt;span class=&quot;n&quot;&gt;_&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;sns&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;barplot&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;x&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;=&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&quot;r_view_p_joined&quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;y&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;=&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&quot;name_joined&quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;data&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;=&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;cdf&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt;
+                &lt;span class=&quot;n&quot;&gt;palette&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;=&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;sns&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;cubehelix_palette&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;n_colors&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;=&lt;/span&gt;&lt;span class=&quot;mi&quot;&gt;30&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;reverse&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;=&lt;/span&gt;&lt;span class=&quot;bp&quot;&gt;True&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;),&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;ax&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;=&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;ax&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;
+&lt;span class=&quot;n&quot;&gt;_&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;ax&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nb&quot;&gt;set&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;xlabel&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;=&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&quot;Views / Joined Date&quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;ylabel&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;=&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&quot;Channel (No. of Videos)&quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;p&gt;&lt;img src=&quot;/assets/images/2019_11_01_channels/channels_19_0.png&quot; alt=&quot;png&quot; /&gt;&lt;/p&gt;
+
+&lt;h3 id=&quot;channels-with-less-video-but-great-views&quot;&gt;Channels with less video but great views&lt;/h3&gt;
+
+&lt;p&gt;&lt;strong&gt;r_view_p_vid = views / videos&lt;/strong&gt;&lt;/p&gt;
+
+&lt;p&gt;Channels with a lot of videos often have large no. of views.
+But with this factor, those channels care about the quality per videos rather than use a lot of videos.&lt;/p&gt;
+
+&lt;p&gt;This factors check great contents.&lt;/p&gt;
+
+&lt;div class=&quot;language-python highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;n&quot;&gt;cdf&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;df_train&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;[&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;df_train&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;[&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;'video_count'&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;]&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;&amp;gt;&lt;/span&gt; &lt;span class=&quot;mi&quot;&gt;3&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;]&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;sort_values&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&quot;r_view_p_vid&quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;ascending&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;=&lt;/span&gt;&lt;span class=&quot;bp&quot;&gt;False&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;head&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;mi&quot;&gt;30&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;
+&lt;span class=&quot;n&quot;&gt;fig&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;ax&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;plt&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;subplots&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;figsize&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;=&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;mi&quot;&gt;10&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt;&lt;span class=&quot;mi&quot;&gt;8&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;))&lt;/span&gt;
+&lt;span class=&quot;n&quot;&gt;_&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;sns&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;barplot&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;x&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;=&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&quot;r_view_p_vid&quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;y&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;=&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&quot;name_vid&quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;data&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;=&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;cdf&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt;
+                &lt;span class=&quot;n&quot;&gt;palette&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;=&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;sns&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;cubehelix_palette&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;n_colors&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;=&lt;/span&gt;&lt;span class=&quot;mi&quot;&gt;30&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;reverse&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;=&lt;/span&gt;&lt;span class=&quot;bp&quot;&gt;True&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;),&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;ax&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;=&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;ax&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;
+&lt;span class=&quot;n&quot;&gt;_&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;ax&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nb&quot;&gt;set&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;xlabel&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;=&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&quot;Views / Videos&quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;ylabel&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;=&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&quot;Channel&quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;p&gt;&lt;img src=&quot;/assets/images/2019_11_01_channels/channels_21_0.png&quot; alt=&quot;png&quot; /&gt;&lt;/p&gt;
+
+&lt;h2 id=&quot;more-specific-on-entertainment&quot;&gt;More specific on Entertainment&lt;/h2&gt;
+
+&lt;p&gt;View count per category&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;Entertainment&lt;/li&gt;
+  &lt;li&gt;Music&lt;/li&gt;
+  &lt;li&gt;People &amp;amp; Blog&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;div class=&quot;language-python highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;n&quot;&gt;x_metric&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;s&quot;&gt;'view_count'&lt;/span&gt;
+
+&lt;span class=&quot;k&quot;&gt;def&lt;/span&gt; &lt;span class=&quot;nf&quot;&gt;draw_per_category&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;category&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;):&lt;/span&gt;
+    &lt;span class=&quot;n&quot;&gt;cdf&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;df_train&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;[&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;df_train&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;[&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;'category'&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;]&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;==&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;category&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;]&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;sort_values&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;x_metric&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;ascending&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;=&lt;/span&gt;&lt;span class=&quot;bp&quot;&gt;False&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;head&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;mi&quot;&gt;30&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;
+    &lt;span class=&quot;n&quot;&gt;fig&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;ax&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;plt&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;subplots&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;figsize&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;=&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;mi&quot;&gt;10&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt;&lt;span class=&quot;mi&quot;&gt;8&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;))&lt;/span&gt;
+    &lt;span class=&quot;n&quot;&gt;_&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;sns&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;barplot&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;x&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;=&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;x_metric&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;y&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;=&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&quot;name_sub_vid&quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;data&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;=&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;cdf&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt;
+                &lt;span class=&quot;n&quot;&gt;palette&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;=&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;sns&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;cubehelix_palette&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;n_colors&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;=&lt;/span&gt;&lt;span class=&quot;mi&quot;&gt;30&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;reverse&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;=&lt;/span&gt;&lt;span class=&quot;bp&quot;&gt;True&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;),&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;ax&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;=&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;ax&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;
+    &lt;span class=&quot;n&quot;&gt;_&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;ax&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nb&quot;&gt;set&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;xlabel&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;=&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;x_metric&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;ylabel&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;=&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&quot;Channel - &quot;&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;+&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;category&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;
+
+
+&lt;span class=&quot;n&quot;&gt;draw_per_category&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;'Entertainment'&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;
+&lt;span class=&quot;n&quot;&gt;draw_per_category&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;'Music'&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;
+&lt;span class=&quot;n&quot;&gt;draw_per_category&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;'People &amp;amp; Blogs'&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;
+&lt;span class=&quot;n&quot;&gt;draw_per_category&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;'Gaming'&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;
+&lt;span class=&quot;n&quot;&gt;draw_per_category&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;'Film &amp;amp; Animation'&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;
+
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;p&gt;&lt;img src=&quot;/assets/images/2019_11_01_channels/channels_23_0.png&quot; alt=&quot;png&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;/assets/images/2019_11_01_channels/channels_23_1.png&quot; alt=&quot;png&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;/assets/images/2019_11_01_channels/channels_23_2.png&quot; alt=&quot;png&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;/assets/images/2019_11_01_channels/channels_23_3.png&quot; alt=&quot;png&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;/assets/images/2019_11_01_channels/channels_23_4.png&quot; alt=&quot;png&quot; /&gt;&lt;/p&gt;
+
+&lt;h2 id=&quot;more-specific-on-eduction&quot;&gt;More specific on Eduction&lt;/h2&gt;
+
+&lt;p&gt;View count per category&lt;/p&gt;
+&lt;ul&gt;
+  &lt;li&gt;Education&lt;/li&gt;
+  &lt;li&gt;Howto &amp;amp; Style&lt;/li&gt;
+  &lt;li&gt;Science &amp;amp; Technology&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;More channels Education is for kids? Quite strange.&lt;/p&gt;
+
+&lt;div class=&quot;language-python highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;n&quot;&gt;draw_per_category&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;'Education'&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;
+&lt;span class=&quot;n&quot;&gt;draw_per_category&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;'Howto &amp;amp; Style'&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;
+&lt;span class=&quot;n&quot;&gt;draw_per_category&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;'Science &amp;amp; Technology'&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;
+
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;p&gt;&lt;img src=&quot;/assets/images/2019_11_01_channels/channels_25_0.png&quot; alt=&quot;png&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;/assets/images/2019_11_01_channels/channels_25_1.png&quot; alt=&quot;png&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;/assets/images/2019_11_01_channels/channels_25_2.png&quot; alt=&quot;png&quot; /&gt;&lt;/p&gt;
+
+&lt;h2 id=&quot;keywords&quot;&gt;Keywords&lt;/h2&gt;
+
+&lt;p&gt;Keywords often frequently appear in channel title&lt;/p&gt;
+
+&lt;div class=&quot;language-python highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;n&quot;&gt;title_words&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;nb&quot;&gt;list&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;df_train&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;[&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&quot;name&quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;]&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nb&quot;&gt;apply&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;k&quot;&gt;lambda&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;x&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;word_tokenize&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;nb&quot;&gt;str&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;x&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;lower&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;())&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;))&lt;/span&gt;
+&lt;span class=&quot;n&quot;&gt;title_words&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;[&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;x&lt;/span&gt; &lt;span class=&quot;k&quot;&gt;for&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;y&lt;/span&gt; &lt;span class=&quot;ow&quot;&gt;in&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;title_words&lt;/span&gt; &lt;span class=&quot;k&quot;&gt;for&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;x&lt;/span&gt; &lt;span class=&quot;ow&quot;&gt;in&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;y&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;]&lt;/span&gt;
+&lt;span class=&quot;n&quot;&gt;Counter&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;title_words&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;most_common&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;mi&quot;&gt;25&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;[('tv', 1566),
+ ('-', 1358),
+ ('việt', 812),
+ ('official', 778),
+ ('channel', 669),
+ ('nam', 636),
+ ('nhạc', 488),
+ ('anh', 403),
+ ('phim', 399),
+ ('vlogs', 388),
+ ('vlog', 385),
+ ('hay', 326),
+ ('music', 303),
+ ('vietnam', 295),
+ ('kênh', 286),
+ ('nguyễn', 284),
+ ('.', 266),
+ ('minh', 248),
+ ('cuộc sống', 242),
+ ('giải trí', 224),
+ ('miền', 223),
+ ('hoàng', 209),
+ ('tin', 200),
+ ('&amp;amp;', 198),
+ ('nguyen', 198)]
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;p&gt;&lt;strong&gt;Wordcloud&lt;/strong&gt;&lt;/p&gt;
+
+&lt;p&gt;Note: việt, vietnam, channel, kênh, official are just &lt;strong&gt;postfix&lt;/strong&gt; of channel name.&lt;/p&gt;
+
+&lt;ol&gt;
+  &lt;li&gt;TV is keyword most appear for channel name&lt;/li&gt;
+  &lt;li&gt;nhạc, music&lt;/li&gt;
+  &lt;li&gt;vlogs, vlog&lt;/li&gt;
+  &lt;li&gt;phim&lt;/li&gt;
+  &lt;li&gt;other… (cuộc sống, giải trí, tin tức, …)&lt;/li&gt;
+&lt;/ol&gt;
+
+&lt;div class=&quot;language-python highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;
+&lt;span class=&quot;n&quot;&gt;wc&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;wordcloud&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;WordCloud&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;width&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;=&lt;/span&gt;&lt;span class=&quot;mi&quot;&gt;1200&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;height&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;=&lt;/span&gt;&lt;span class=&quot;mi&quot;&gt;500&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; 
+                         &lt;span class=&quot;n&quot;&gt;collocations&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;=&lt;/span&gt;&lt;span class=&quot;bp&quot;&gt;False&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;background_color&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;=&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&quot;white&quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; 
+                         &lt;span class=&quot;n&quot;&gt;colormap&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;=&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&quot;tab20b&quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;generate&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&quot; &quot;&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;join&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;title_words&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;))&lt;/span&gt;
+&lt;span class=&quot;n&quot;&gt;_&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;plt&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;figure&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;figsize&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;=&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;mi&quot;&gt;15&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt;&lt;span class=&quot;mi&quot;&gt;10&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;))&lt;/span&gt;
+&lt;span class=&quot;n&quot;&gt;_&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;plt&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;imshow&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;wc&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;interpolation&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;=&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;'bilinear'&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;
+&lt;span class=&quot;n&quot;&gt;_&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;plt&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;axis&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&quot;off&quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;p&gt;&lt;img src=&quot;/assets/images/2019_11_01_channels/channels_29_0.png&quot; alt=&quot;png&quot; /&gt;&lt;/p&gt;
+
+&lt;h2 id=&quot;conclusion&quot;&gt;Conclusion&lt;/h2&gt;
+
+&lt;h3 id=&quot;benefits&quot;&gt;Benefits.&lt;/h3&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;Sometime, as YouTuber should know trending on YouTube to adapt and change follow the demand of audience.&lt;/li&gt;
+  &lt;li&gt;Knowing content of your competitors produce, and might be they know audience’s demand, might help your channel survive&lt;/li&gt;
+  &lt;li&gt;Or if you’re just normal user who want to find interest channel to learn or entertain, this analysis is for you. &lt;strong&gt;(All the best channel included)&lt;/strong&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h3 id=&quot;about-the-content-just-my-opinion&quot;&gt;About the content, just my opinion.&lt;/h3&gt;
+
+&lt;p&gt;Reference: Veritasium Channel&lt;/p&gt;
+
+&lt;p&gt;“My Video Went Viral. Here’s Why” (&lt;a href=&quot;https://www.youtube.com/watch?v=fHsa9DqmId8&quot; target=&quot;_blank&quot; rel=&quot;nofollow&quot;&gt;https://www.youtube.com/watch?v=fHsa9DqmId8&lt;/a&gt;)&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;“Audience change their taste, algorithm reflect their demand, youtuber chase the algorithm to survive”. The circle repeat, and repeat.&lt;/li&gt;
+  &lt;li&gt;The quality content depends on demand of audience. What content are audience want to watch? Great or poor content, depend on them.&lt;/li&gt;
+  &lt;li&gt;Hope YouTuber keep up produce great content.&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;I provided tool below which query channel in sub-category. Hope you find something interest.
+And will continue analysis on 500,000 videos of top channels in Vietnam. To be continue….&lt;/p&gt;
+
+&lt;link rel=&quot;stylesheet&quot; href=&quot;https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css&quot; /&gt;
+
+&lt;link rel=&quot;stylesheet&quot; href=&quot;https://cdn.datatables.net/1.10.20/css/dataTables.bootstrap.min.css&quot; /&gt;
+
+&lt;link rel=&quot;stylesheet&quot; href=&quot;https://cdn.datatables.net/1.10.20/css/jquery.dataTables.min.css&quot; /&gt;
+
+&lt;script src=&quot;https://code.jquery.com/jquery-3.4.1.min.js&quot;&gt;&lt;/script&gt;
+
+&lt;script src=&quot;https://cdnjs.cloudflare.com/ajax/libs/jquery.lazyload/1.9.1/jquery.lazyload.min.js&quot;&gt;&lt;/script&gt;
+
+&lt;script src=&quot;https://cdn.datatables.net/1.10.20/js/jquery.dataTables.min.js&quot;&gt;&lt;/script&gt;
+
+&lt;script src=&quot;https://cdn.datatables.net/1.10.20/js/dataTables.bootstrap.min.js&quot;&gt;&lt;/script&gt;
+
+&lt;script src=&quot;https://stackpath.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js&quot;&gt;&lt;/script&gt;
+
+&lt;style&gt;
+    .float-left {
+        float: left
+    }
+&lt;/style&gt;
+
+&lt;div class=&quot;row&quot;&gt;
+    &lt;hr /&gt;
+    &lt;h1&gt;II. Tool for query top channels&lt;/h1&gt;
+    &lt;p&gt;Select category or value, and click search&lt;/p&gt;
+
+
+    &lt;label for=&quot;by_category&quot; class=&quot;float-left&quot;&gt;Category: &lt;/label&gt;
+    &lt;span class=&quot;float-left&quot;&gt;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&lt;/span&gt;
+    &lt;select name=&quot;by_category&quot; id=&quot;by_category&quot; class=&quot;float-left&quot;&gt;
+        &lt;option value=&quot;any&quot;&gt;Any&lt;/option&gt;
+        &lt;option value=&quot;people_blogs&quot;&gt;People &amp;amp; Blogs&lt;/option&gt;
+        &lt;option value=&quot;entertainment&quot;&gt;Entertainment&lt;/option&gt;
+        &lt;option value=&quot;music&quot;&gt;Music&lt;/option&gt;
+        &lt;option value=&quot;gaming&quot;&gt;Gaming&lt;/option&gt;
+        &lt;option value=&quot;film_animation&quot;&gt;Film &amp;amp; Animation&lt;/option&gt;
+        &lt;option value=&quot;education&quot;&gt;Education&lt;/option&gt;
+        &lt;option value=&quot;howto_style&quot;&gt;Howto &amp;amp; Style&lt;/option&gt;
+        &lt;option value=&quot;news_politics&quot;&gt;News &amp;amp; Politics&lt;/option&gt;
+        &lt;option value=&quot;autos_vehicles&quot;&gt;Autos &amp;amp; Vehicles&lt;/option&gt;
+        &lt;option value=&quot;science_technology&quot;&gt;Science &amp;amp; Technology&lt;/option&gt;
+        &lt;option value=&quot;travel_events&quot;&gt;Travel &amp;amp; Events&lt;/option&gt;
+        &lt;option value=&quot;sports&quot;&gt;Sports&lt;/option&gt;
+        &lt;option value=&quot;comedy&quot;&gt;Comedy&lt;/option&gt;
+        &lt;option value=&quot;pets_animals&quot;&gt;Pets &amp;amp; Animals&lt;/option&gt;
+        &lt;option value=&quot;nonprofits_activism&quot;&gt;Nonprofits &amp;amp; Activism&lt;/option&gt;
+    &lt;/select&gt;
+    &lt;span class=&quot;float-left&quot;&gt;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&lt;/span&gt;
+
+    &lt;label for=&quot;by_value&quot; class=&quot;float-left&quot;&gt;Value: &lt;/label&gt;
+    &lt;span class=&quot;float-left&quot;&gt;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&lt;/span&gt;
+
+    &lt;select name=&quot;by_value&quot; id=&quot;by_value&quot; class=&quot;float-left&quot;&gt;
+        &lt;option value=&quot;subscribers_infer&quot;&gt;Subscribers&lt;/option&gt;
+        &lt;option value=&quot;view_count&quot;&gt;View Count&lt;/option&gt;
+        &lt;option value=&quot;r_view_p_vid&quot;&gt;View / Video&lt;/option&gt;
+        &lt;option value=&quot;r_view_p_joined&quot;&gt;View / Joined&lt;/option&gt;
+    &lt;/select&gt;
+    &lt;span class=&quot;float-left&quot;&gt;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&lt;/span&gt;
+
+    &lt;button class=&quot;btn btn--primary&quot; id=&quot;query_data&quot;&gt;Search&lt;/button&gt;
+
+&lt;/div&gt;
+
+&lt;p&gt;&lt;br /&gt;&lt;br /&gt;&lt;/p&gt;
+&lt;hr /&gt;
+
+&lt;p&gt;&lt;span id=&quot;message&quot;&gt;&lt;/span&gt;&lt;/p&gt;
+&lt;table id=&quot;channel_query&quot;&gt;&lt;/table&gt;
+
+&lt;script&gt;
+    var _sample = {&quot;data&quot;: [[&quot;_UdIvyF6KtJ7EmbinWeu3gbOCZ9yJyB8RGGw&quot;, &quot;FAP TV (10.3M - 447 videos)&quot;, 10300000], [&quot;-3fBeacUrCLKhWiZNN9Z1KPxo_sdWqMyT6VQ&quot;, &quot;POPS Kids (9.71M - 7,085 videos)&quot;, 9710000], [&quot;9eImSN36XK8fzHXrhkQQSCvMS65m5Gc4I_Og&quot;, &quot;NTN Vlogs (8.1M - 329 videos)&quot;, 8100000], [&quot;_CdUiZZ3tctayx9h9Lr659L-jhMwfOWr4Dyg&quot;, &quot;B\u00e9 B\u00fan - B\u00e9 B\u1eafp (~7M - 806 videos)&quot;, 7484216], [&quot;8sMyRtkcbcjP6I1m4dOyUbjs9qMbeixrE8&quot;, &quot;Cris Devil Gamer (7.41M - 814 videos)&quot;, 7410000], [&quot;_g3IpUaTOU3Ys5ZKQLK-uxOFaPBcsVK1GAlg&quot;, &quot;POPS MUSIC (7.29M - 25,462 videos)&quot;, 7290000], [&quot;9_5C7nXoG-wA7O4ipOvuy8Luiso7_NhhAIRA&quot;, &quot;Th\u01a1 Nguy\u1ec5n (6.91M - 895 videos)&quot;, 6910000], [&quot;9-NyoEhefShF17qFmadGhwnbKoflF0QnLePg&quot;, &quot;Vie Channel - HTV2 (6.32M - 6,358 videos)&quot;, 6320000], [&quot;-bxtbb1fuWGHZTuftKpUV5lcdAjphpNU2qqg&quot;, &quot;K\u00eanh Thi\u1ebfu Nhi - BHMEDIA (6.06M - 6,078 videos)&quot;, 6060000], [&quot;-jyIWkiylJ-diQFBX30bjOIwyavNi8WCCv7g&quot;, &quot;Kid Studio (5.8M - 1,199 videos)&quot;, 5800000], [&quot;_PjtqAAR0YGbfsWlae7HufAEIAQVWaofY4MA&quot;, &quot;Vanh Leg (5.78M - 62 videos)&quot;, 5780000], [&quot;8QGTW3gMAN3s_devNGhlzjBO9eCRPGTg0iUQ&quot;, &quot;S\u01a1n T\u00f9ng M-TP Official (5.78M - 81 videos)&quot;, 5780000], [&quot;-iEIqCCsTLm2Pmwt1Fxg_XMvXJWG2nOeLuuA&quot;, &quot;HTV Entertainment (5.59M - 13,372 videos)&quot;, 5590000], [&quot;-igyhfOt6nYOCH-UvX0MNEXzOycZfpygPW0g&quot;, &quot;iGAMING TV (5.43M - 43 videos)&quot;, 5430000], [&quot;_Ne6L8QX0MN95BZUGej2SnyZTojn8kwsXKuQ&quot;, &quot;SITCOM FOR LIFE (~5M - 838 videos)&quot;, 5413808], [&quot;_9lbpu5KnhWGkt9v9T5Ir04uTBUYumdCEV-w&quot;, &quot;\u0110\u00d4NG T\u00c2Y PROMOTION OFFICIAL (5.41M - 7,430 videos)&quot;, 5410000], [&quot;8fNby9Bb2Tu3PQLq8pqJ7F6Y-NskoXPKhCYQ&quot;, &quot;KN Channel (5.29M - 769 videos)&quot;, 5290000], [&quot;_dHHZLx0FSy6RZng2gDMtzBHA-d-RcDN_ysg&quot;, &quot;Ghi\u1ec1n M\u00ec G\u00f5 (5.25M - 588 videos)&quot;, 5250000], [&quot;9X2C9dgDeprBbk4KF_ppfa6T_j5FCP_VZGbQ&quot;, &quot;DIEN QUAN Comedy / H\u00e0i (5.1M - 3,490 videos)&quot;, 5100000], [&quot;9rb7L_QB4DGrRn84N0a3UISG1lEBKG2aGrgw&quot;, &quot;PHD Troll (4.79M - 515 videos)&quot;, 4790000], [&quot;9EcsFrI3zv-wcTcJikbucm_2kiSNQ_dWVfeA&quot;, &quot;ChiChi TV (4.76M - 957 videos)&quot;, 4760000], [&quot;_KivoWaiCvPG5Xv96cW6n0qQIswBGstQHI5g&quot;, &quot;Hau Hoang (4.68M - 54 videos)&quot;, 4680000], [&quot;-q4AyEVtgXYaU2GRBWMmTjSIj7RChDRrJ5FA&quot;, &quot;K-ICM Official (4.42M - 67 videos)&quot;, 4420000], [&quot;-Gv-frItGOhqfeIS9t-BYwtaJziX6MoALlpA&quot;, &quot;DIEN QUAN Entertainment / Gi\u1ea3i Tr\u00ed (4.41M - 5,788 videos)&quot;, 4410000], [&quot;9UlxHcihUOyCUgsaJqPy7nc4X3o1OilGANEQ&quot;, &quot;Ghi\u1ec1n Phim (~4M - 195 videos)&quot;, 4253991], [&quot;-yypMauJhkKN3SG-l4waTawzONLMYqQPvJhA&quot;, &quot;MISTHY TV (4.24M - 1,160 videos)&quot;, 4240000], [&quot;92dLbAXzbI2MN5NNW5VWJ7y4F3cyqYxy1VJw&quot;, &quot;Oops Banana (4.19M - 1,208 videos)&quot;, 4190000], [&quot;9gPg3SqEtZGx9M4QHTLhauMnKjwbisFisl&quot;, &quot;SlenderMan\u2122 (3.99M - 1,094 videos)&quot;, 3990000], [&quot;_2aKnrfrKpFB98vEYeCzOfjFO-g5mAXuQIrA&quot;, &quot;Mobile MOBA Vi\u1ec7t (3.97M - 3,535 videos)&quot;, 3970000], [&quot;_EH-iblXhxv1DOaKaksaakA5HL-dLi2aW1ug&quot;, &quot;Truyen Hinh Vinh Long (3.8M - 15,049 videos)&quot;, 3800000], [&quot;8yuC7RbanKj-R3GDTwZ6SsjFKeBG3zSRJ2hw&quot;, &quot;THVL Gi\u1ea3i Tr\u00ed (3.78M - 18,758 videos)&quot;, 3780000], [&quot;9Sg_bsAWDf8bYC-gnjvXGHQzd5WIBm602VnQ&quot;, &quot;LA LA SCHOOL (3.74M - 607 videos)&quot;, 3740000], [&quot;9T77D-2g5LW0J4w9daHWxT2QXc_N1VNgdPSA&quot;, &quot;TXT (3.72M - 3,363 videos)&quot;, 3720000], [&quot;8vljStFWCOPzRiBqCVsp0H52KG5CxCHXaHvA&quot;, &quot;H\u00e0nh Tinh \u0110\u1ed3 Ch\u01a1i - Toy Planet (3.71M - 689 videos)&quot;, 3710000], [&quot;8n9hibOl7Q7DuWriR5RzdTOUbxN_YgXKM_BQ&quot;, &quot;Garena Li\u00ean Qu\u00e2n Mobile (3.66M - 3,278 videos)&quot;, 3660000], [&quot;8xQdV1ux__wJ451Yphk95nHp5RbwtnUKV-uQ&quot;, &quot;PHIM C\u1ea4P 3 (3.58M - 326 videos)&quot;, 3580000], [&quot;_94yL3Ix6zWobVlquf0vxDUUGw6oAismTreg&quot;, &quot;VN Children\u2019s Music (~4M - 256 videos)&quot;, 3517910], [&quot;9P2-80d9aQp7RRPFkMA4jTugf0vto-2rVbpA&quot;, &quot;YEAH1TV (3.45M - 7,922 videos)&quot;, 3450000], [&quot;9Z4RQou6p3nq8vSakNi1PdoVZF2ta3jrjB1w&quot;, &quot;Bom Bom Songs (3.37M - 179 videos)&quot;, 3370000], [&quot;_l5-mLJ_KySkJ4ngKKa9jsRa-gCP6UTCk1kA&quot;, &quot;B\u00e0 T\u00e2n Vlog (3.33M - 124 videos)&quot;, 3330000], [&quot;8lATEg568WOzdO3y9KCDmFOAXnIW4sSL20iw&quot;, &quot;PEWPEW (3.31M - 2,260 videos)&quot;, 3310000], [&quot;8DG8q2p_WPmDVIA63h_rpSlN0IPh85qCFfOw&quot;, &quot;RedhoodVN (3.31M - 275 videos)&quot;, 3310000], [&quot;_TvrRRb8ttbKz9rjr2MHgIEUvJapZykByubA&quot;, &quot;BIBI TV (3.3M - 775 videos)&quot;, 3300000], [&quot;8jqZYHAsnR10vNUQcf9z5_2OWGe2eTKvECKQ&quot;, &quot;KhangProFilm (3.24M - 364 videos)&quot;, 3240000], [&quot;8eFzxM_-BZPihvYwbXcenIRW1b1TmfP_nz8Q&quot;, &quot;SVM SCHOOL (3.14M - 363 videos)&quot;, 3140000], [&quot;9ckflfD9hPws7L8fPAfJDv3nLMVbSAIslYMg&quot;, &quot;Xavi ABCKids (3.12M - 190 videos)&quot;, 3120000], [&quot;_AecHHp7-CgHeiW8UGjBwVO8yEVEs73uorUw&quot;, &quot;Phim HOT TK-L (3.07M - 4,523 videos)&quot;, 3070000], [&quot;9YfrBYLiu-4HmbGIbeDUp_6234ENQyxD1aYA&quot;, &quot;Vietnam Esports TV (2.95M - 8,957 videos)&quot;, 2950000], [&quot;9XGyX_5xLkSniTbn9KCrpl_c_LhKqpn-hUTQ&quot;, &quot;M\u1ec1u Channel (2.95M - 373 videos)&quot;, 2950000], [&quot;8xxA0IABHDbMRLpsXdyLYT178Xf0aFVCRO_w&quot;, &quot;ANTV - Truy\u1ec1n h\u00ecnh C\u00f4ng an Nh\u00e2n d\u00e2n (2.92M - 28,971 videos)&quot;, 2920000], [&quot;9PdW42vgPsipzOi9GPDY97QDH9Y-ztYoObdQ&quot;, &quot;DIEN QUAN Film (2.91M - 2,972 videos)&quot;, 2910000], [&quot;8lSyop1MWWLsOnN7n01uDM5GlfxO901Vddxw&quot;, &quot;AS Mobile (2.89M - 1,801 videos)&quot;, 2890000], [&quot;_fJLpO5qeQvNOAnvvVzGBnK2y883z7U2amHw&quot;, &quot;L\u00e2m Vlog (2.87M - 509 videos)&quot;, 2870000], [&quot;8Q3J2Q8QIh5xLn4GS9CMX1jIr-4WvD0hi_-Q&quot;, &quot;Susi kids TV (2.86M - 818 videos)&quot;, 2860000], [&quot;-2UsuMv_XqQ9TsNOqcn1jfXtdV4szs0h5HMg&quot;, &quot;My Tam (~3M - 371 videos)&quot;, 2835681], [&quot;_jFTiXGa0JS648LRrFE8VaOejbssQp6_6WoQ&quot;, &quot;Vlad v\u00e0 Nikita (2.83M - 163 videos)&quot;, 2830000], [&quot;-PJpx0wjvYvwKwb82v9LjJybyBR6EMyAbdPA&quot;, &quot;AnAn ToysReview TV (2.83M - 199 videos)&quot;, 2830000], [&quot;-KcxPPYyp0hIBTLJf5ODGEjtlAKeWInuX6PQ&quot;, &quot;Nguy\u1ec5n H\u01b0\u01a1ng Ly Official (2.8M - 67 videos)&quot;, 2800000], [&quot;_ztg2jWWL9vorFdThFLTVj0e5n3fnXSmKSuQ&quot;, &quot;Phim Hay \u0110i\u1ec7n \u1ea2nh (2.72M - 4,121 videos)&quot;, 2720000], [&quot;-Fms3FNCJME0aBv7rparg1399h4yqTS2PaCg&quot;, &quot;THVL Phim (2.69M - 11,958 videos)&quot;, 2690000], [&quot;-UN0LsqvJa0l-SFEqUADNP1msb22Ualce1xQ&quot;, &quot;5 PH\u00daT TH\u1ee6 C\u00d4NG (2.65M - 1,596 videos)&quot;, 2650000], [&quot;-q9OhaeXnhL-6aMLtBsZc-fzo0Aaq9RGDo3Q&quot;, &quot;ViruSs (2.65M - 2,414 videos)&quot;, 2650000], [&quot;-e_GlZuPbGHV4xeKtog-P9ocfJB1HPJu5oXQ&quot;, &quot;YEAH1 MUSIC (2.62M - 3,885 videos)&quot;, 2620000], [&quot;_lnXp6n2Pjy9p5u_kv9rr0K9gqm7fm0idb6Q&quot;, &quot;Nam Vi\u1ec7t Music (2.61M - 992 videos)&quot;, 2610000], [&quot;903mM6AiNyu7JFQdAszZmA45rhHSl4NEKeIw&quot;, &quot;\u1ea8m Th\u1ef1c Tam Mao (2.59M - 252 videos)&quot;, 2590000], [&quot;-XuEqjJWBlNzNxuyHeoJJnnDcF2Y-sWkQzDg&quot;, &quot;Phim H\u00e0i - B\u00ecnh Minh Film (2.58M - 355 videos)&quot;, 2580000], [&quot;-Hz3c26XS7uQ-qGu0IzwK8nxy9Ub4s3WcgwA&quot;, &quot;Gi\u1ecdng Ca \u0110\u1ec3 \u0110\u1eddi (2.57M - 1,654 videos)&quot;, 2570000], [&quot;9Vo6B-j-7s4tcTexburYgnYB0rnH9Jt1JPfw&quot;, &quot;PinPin TV (~3M - 451 videos)&quot;, 2527263], [&quot;9DLL-Gz2MEc7BIsqv5Vrf7WI0Mvn8bTM4Owg&quot;, &quot;Zing MP3 (2.49M - 1,622 videos)&quot;, 2490000], [&quot;8AJWmJvtZ2y3qm3GHJHOW_KZkYtE5DRE-3TA&quot;, &quot;Ti\u1ec1n Zombie v4 (2.39M - 2,111 videos)&quot;, 2390000], [&quot;9_ST5aF1TkrpN8JHx-yGU2vtCym983yYDyOw&quot;, &quot;MCVMedia (2.39M - 10,044 videos)&quot;, 2390000], [&quot;_FIFawXDXwtFriUNlj5YWjalI-CmIVtgeXvA&quot;, &quot;HOA BAN FOOD (2.37M - 543 videos)&quot;, 2370000], [&quot;_X_bsF0dt91ltgWQHnPrjqQGko2AN_szMy2A&quot;, &quot;TR\u1ea4N TH\u00c0NH TOWN (2.37M - 283 videos)&quot;, 2370000], [&quot;-dtu4lY-V75gZ2iTDyvbO3AHAhlww98pXu5g&quot;, &quot;Schannel (2.36M - 8,928 videos)&quot;, 2360000], [&quot;_XCrZv9BJvkrd5pHpNRQO809e01Q34_fFmEA&quot;, &quot;XEM G\u00cc H\u00d4M NAY (2.32M - 774 videos)&quot;, 2320000], [&quot;_c3SIfRPuEaP18XAjUy8aVCiiULJkgiq9-LA&quot;, &quot;ToyTV - Kh\u1ee7ng long vui nh\u1ed9n (2.27M - 486 videos)&quot;, 2270000], [&quot;-eAnc-VSMUnq1EgFIyhV_2TtiywXKlHUOjpg&quot;, &quot;Ohsusu TV (2.27M - 589 videos)&quot;, 2270000], [&quot;8rBgf4hGYn5kiHpDT4J3JolRs8r81BgCzK1w&quot;, &quot;Khoa Pug (2.26M - 333 videos)&quot;, 2260000], [&quot;_uINf8ZyvaZTcwayyuGmsQ2mkFUrhoew_3dw&quot;, &quot;H&amp;M Channel (2.24M - 240 videos)&quot;, 2240000], [&quot;8bysHfQsqXguOb5lbShvsDypFGSfHrYJl51Q&quot;, &quot;Tony TV (2.21M - 447 videos)&quot;, 2210000], [&quot;_LYRh3ERE29yTDeCRQ6IP0OrCZsUxdNCi9zQ&quot;, &quot;Thu Trang Official (2.2M - 143 videos)&quot;, 2200000], [&quot;9JFKvxJM3n7uu_y4-upN-S55GIozYdBY0zsQ&quot;, &quot;Garena Free Fire Vietnam (2.2M - 713 videos)&quot;, 2200000], [&quot;_B-Req_mrpUmlM2dKf3ZLHvfKXrlodNTDt_A&quot;, &quot;LaLa Kids TV (~2M - 109 videos)&quot;, 2182087], [&quot;9Hus6QpRAAGfmH2c_g_D4jPUjNCxcnk0k5lg&quot;, &quot;\u0110\u1eadu Ph\u1ed9ng TV (2.17M - 113 videos)&quot;, 2170000], [&quot;-CDzTWWrwwqlVZ7BnxTJmgqNuazTiCl-H-&quot;, &quot;H\u1ed3ng \u00c2n Entertainment (~2M - 486 videos)&quot;, 2142049], [&quot;8S-fSu80UP1_EWtXRqGfIh4RLrFoBdsguZjA&quot;, &quot;An Ninh Th\u1ebf Gi\u1edbi (2.14M - 9,109 videos)&quot;, 2140000], [&quot;8S7z8lfV31j4sFgUVOkG_ejTpPMYemDHUQyg&quot;, &quot;KH\u01af\u01a0NG D\u1eeaA CHANNEL (2.13M - 1,450 videos)&quot;, 2130000], [&quot;83yMDyHO_jZK19c0j-6BEWBN9mitrI3p43Hw&quot;, &quot;K\u00caNH VTC1 (2.1M - 44,987 videos)&quot;, 2100000], [&quot;-pAykA_QI3YqC7hWUpJ864YWekGFUidfHv8g&quot;, &quot;CulyTV (~2M - 1,405 videos)&quot;, 2099903], [&quot;-ihU6yznRSxAMVixJmyqeE8wJQM7SGXhz4_g&quot;, &quot;Nh\u1ea1c Thi\u1ebfu Nhi (~2M - 199 videos)&quot;, 2086138], [&quot;8ibskGUdop__eq73K4JrhvLs8I2Eq2r7Rl1w&quot;, &quot;NCT Vlogs (2.08M - 151 videos)&quot;, 2080000], [&quot;8ZdqJzT07KY91IpIbL2FfKk9uSzhEQ0hfh_A&quot;, &quot;Phim H\u00e0i Hay - Phim H\u00e0i Vi\u1ec7t (2.07M - 1,134 videos)&quot;, 2069999], [&quot;8-NA5kfrPLeaQB4zN0ZBE5oCvBP7TMyGXtfQ&quot;, &quot;Chim Xinh Channel (2.07M - 1,891 videos)&quot;, 2069999], [&quot;99RR3CxLJyrEVhm8cplh4DLoB58UC3qfKqBQ&quot;, &quot;MixiGaming (2.05M - 636 videos)&quot;, 2049999], [&quot;-AFzRi5u21VvtbOyPO6FtCJszYu6ELtIyFwg&quot;, &quot;Thi\u1ec7u Nh\u1ea5t Nguy\u00ean (2.05M - 226 videos)&quot;, 2049999], [&quot;_8-iCPom_7IJiUDxGhUlRjV7wuFK6WmmKNww&quot;, &quot;Phim Si\u00eau Nh\u00e2n Nh\u1eadt B\u1ea3n (2.05M - 1,255 videos)&quot;, 2049999], [&quot;-Wt2w4Cu6t2U4Nnw_4TCMVDskFWFC6yYfrcQ&quot;, &quot;C\u00e0 Chua \u0110\u1ecf (2.04M - 517 videos)&quot;, 2040000], [&quot;-v4dT8YHNztmf2v-RmQzwV7Tu-eY2InJNZNQ&quot;, &quot;\u0110\u1ed7 Duy Nam (2.03M - 130 videos)&quot;, 2029999], [&quot;_1MzAXH2V9r1Q_Uq90Y0dh23l3hFfFqldmwQ&quot;, &quot;Jack &amp; Liam (2.03M - 60 videos)&quot;, 2029999], [&quot;9D2UdpUxi6FMSuzOb15vvYy6hWwyx3sxOqNQ&quot;, &quot;\u0110EN TV (2.03M - 60 videos)&quot;, 2029999]]};
+
+
+    $('#query_data').click(function(){
+        var btn = this;
+        $(btn).prop('disabled', true);
+        $('#message').html('Requesting data ....');
+
+        setTimeout(function () {
+            $(btn).prop('disabled', false);
+        }, 1000);
+
+        var by_category = $('#by_category').val();
+        var by_value = $('#by_value').val();
+
+
+        $.ajax({
+            type: 'GET',
+            dataType: 'json',
+            url: '/assets/data/channels/' + by_category + '/' + by_value,
+
+            success: function (res) {
+                if (res) {
+                    var table = $('#channel_query').DataTable();
+                    table.clear();
+                    table.rows.add(formatDatatable(res.data));
+                    table.search('').draw();
+                }
+                $('#message').html('Category: ' + by_category + '. Value: ' + by_value)
+            },
+            error: function(xhr, status, error){
+                console.log(error);
+                $('#message').html(error)
+            },
+        });
+    });
+
+
+    var formatDatatable = function (data) {
+        var results = [];
+
+        var id = 1;
+        data.forEach(function (item) {
+            var data = {};
+            data['id'] = id++;
+            avatar = 'https://yt3.ggpht.com/a/AGF-l7' + item[0] + '=s100-c-k-c0xffffffff-no-rj-mo';
+            data['thumbnail'] = '&lt;br&gt;&lt;img class=&quot;lazy&quot; height=&quot;80&quot; width=&quot;80&quot; data-original=&quot;' + avatar + '&quot;&gt;&lt;br&gt;';
+            data['name'] = item[1];
+            data['value'] = item[2];
+
+            results.push(data);
+        });
+
+        return results;
+    };
+
+    $('#channel_query').DataTable({
+        &quot;aaData&quot;      : formatDatatable(_sample.data),
+        &quot;processing&quot;: true,
+        &quot;serverSide&quot;: false,
+        &quot;drawCallback&quot;: function () {
+            $(&quot;img.lazy&quot;).lazyload();
+        },
+        &quot;bAutoWidth&quot;: false,
+        &quot;order&quot;: [[0, &quot;asc&quot;]],
+        &quot;aoColumns&quot;: [
+            {&quot;sWidth&quot;: &quot;5%&quot;, &quot;sTitle&quot;: &quot;ID&quot;, &quot;mDataProp&quot;: &quot;id&quot;},
+            {&quot;sWidth&quot;: &quot;5%&quot;, &quot;sTitle&quot;: &quot;Thumbnail&quot;, &quot;mDataProp&quot;: &quot;thumbnail&quot;},
+            {&quot;sWidth&quot;: &quot;80%&quot;, &quot;sTitle&quot;: &quot;Name&quot;, &quot;mDataProp&quot;: &quot;name&quot;},
+            {&quot;sWidth&quot;: &quot;10%&quot;, &quot;sTitle&quot;: &quot;Value&quot;, &quot;mDataProp&quot;: &quot;value&quot;},
+        ],
+        &quot;searchDelay&quot;: 350,
+        &quot;pageLength&quot;: 30,
+        &quot;lengthMenu&quot;: [[10, 20, 30, 1000], [10, 20, 30, 1000]],
+    });
+&lt;/script&gt;</content><author><name>Will Nguyen</name></author><category term="EDA" /><category term="Data Mining" /><category term="Data Analysis" /><summary type="html">Overall picture of YouTube channels in Vietnam</summary></entry></feed>

@@ -1,0 +1,1024 @@
+<!doctype html>
+<!--
+  Minimal Mistakes Jekyll Theme 4.17.2 by Michael Rose
+  Copyright 2013-2019 Michael Rose - mademistakes.com | @mmistakes
+  Free for personal and commercial use under the MIT license
+  https://github.com/mmistakes/minimal-mistakes/blob/master/LICENSE
+-->
+<html lang="en" class="no-js">
+  <head>
+    <meta charset="utf-8">
+
+<!-- begin _includes/seo.html --><title>EDA YouTube channels in Vietnam - Analysis</title>
+<meta name="description" content="Overall picture of YouTube channels in Vietnam">
+
+
+  <meta name="author" content="Will Nguyen">
+
+
+<meta property="og:type" content="article">
+<meta property="og:locale" content="en_US">
+<meta property="og:site_name" content="Analysis">
+<meta property="og:title" content="EDA YouTube channels in Vietnam">
+<meta property="og:url" content="https://wakemei.com/eda/channels/">
+
+
+  <meta property="og:description" content="Overall picture of YouTube channels in Vietnam">
+
+
+
+
+
+
+
+  <meta property="article:published_time" content="2019-11-01T00:00:00+07:00">
+
+
+
+
+
+  
+
+  
+
+
+<link rel="canonical" href="https://wakemei.com/eda/channels/">
+
+
+
+
+<script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    
+      "@type": "Person",
+      "name": "Wakemei",
+      "url": "https://wakemei.com/"
+    
+  }
+</script>
+
+
+
+
+
+
+<!-- end _includes/seo.html -->
+
+
+<link href="/feed.xml" type="application/atom+xml" rel="alternate" title="Analysis Feed">
+
+<!-- https://t.co/dKP3o1e -->
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<script>
+  document.documentElement.className = document.documentElement.className.replace(/\bno-js\b/g, '') + ' js ';
+</script>
+
+<!-- For all browsers -->
+<link rel="stylesheet" href="/assets/css/main.css">
+
+<!--[if IE]>
+  <style>
+    /* old IE unsupported flexbox fixes */
+    .greedy-nav .site-title {
+      padding-right: 3em;
+    }
+    .greedy-nav button {
+      position: absolute;
+      top: 0;
+      right: 0;
+      height: 100%;
+    }
+  </style>
+<![endif]-->
+
+
+
+    <!-- start custom head snippets -->
+
+<!-- insert favicons. use https://realfavicongenerator.net/ -->
+
+<!-- end custom head snippets -->
+
+  </head>
+
+  <body class="layout--posts_2 wide">
+    <nav class="skip-links">
+  <h2 class="screen-reader-text">Skip links</h2>
+  <ul>
+    <li><a href="#site-nav" class="screen-reader-shortcut">Skip to primary navigation</a></li>
+    <li><a href="#main" class="screen-reader-shortcut">Skip to content</a></li>
+    <li><a href="#footer" class="screen-reader-shortcut">Skip to footer</a></li>
+  </ul>
+</nav>
+
+    <!--[if lt IE 9]>
+<div class="notice--danger align-center" style="margin: 0;">You are using an <strong>outdated</strong> browser. Please <a href="https://browsehappy.com/">upgrade your browser</a> to improve your experience.</div>
+<![endif]-->
+
+    
+
+<div class="masthead">
+  <div class="masthead__inner-wrap">
+    <div class="masthead__menu">
+      <nav id="site-nav" class="greedy-nav">
+        
+        <a class="site-title" href="/">
+          Analysis
+          
+        </a>
+        <ul class="visible-links"></ul>
+        
+        <button class="greedy-nav__toggle hidden" type="button">
+          <span class="visually-hidden">Toggle menu</span>
+          <div class="navicon"></div>
+        </button>
+        <ul class="hidden-links hidden"></ul>
+      </nav>
+    </div>
+  </div>
+</div>
+
+
+    <div class="initial-content">
+      
+
+
+
+<div id="main" role="main">
+
+    <div class="archive">
+        
+        <h1 id="page-title" class="page__title">EDA YouTube channels in Vietnam</h1>
+        
+        <h3 id="table-of-content">Table of content</h3>
+<div id="toc" class="toc small"><ul class="toc-item"><li><span><i class="fa fa-fw fa-caret-down"></i><a href="#EDA-YouTube-channels-in-Vietnam" data-toc-modified-id="EDA-YouTube-channels-in-Vietnam-1"><span class="toc-item-num">1&nbsp;&nbsp;</span>EDA YouTube channels in Vietnam</a></span><ul class="toc-item"><li><span><i class="fa fa-fw"></i><a href="#Goals-of-the-analysis" data-toc-modified-id="Goals-of-the-analysis-1.1"><span class="toc-item-num">1.1&nbsp;&nbsp;</span>Goals of the analysis</a></span></li><li><span><i class="fa fa-fw fa-caret-down"></i><a href="#General-analysis" data-toc-modified-id="General-analysis-1.2"><span class="toc-item-num">1.2&nbsp;&nbsp;</span>General analysis</a></span><ul class="toc-item"><li><span><i class="fa fa-fw"></i><a href="#Channels-with-most-subscribers." data-toc-modified-id="Channels-with-most-subscribers.-1.2.1"><span class="toc-item-num">1.2.1&nbsp;&nbsp;</span>Channels with most subscribers.</a></span></li><li><span><i class="fa fa-fw"></i><a href="#Number-of-subscribers-vs.-views" data-toc-modified-id="Number-of-subscribers-vs.-views-1.2.2"><span class="toc-item-num">1.2.2&nbsp;&nbsp;</span>Number of subscribers vs. views</a></span></li><li><span><i class="fa fa-fw"></i><a href="#Number-of-videos-vs.-views" data-toc-modified-id="Number-of-videos-vs.-views-1.2.3"><span class="toc-item-num">1.2.3&nbsp;&nbsp;</span>Number of videos vs. views</a></span></li><li><span><i class="fa fa-fw"></i><a href="#Category-per-channels" data-toc-modified-id="Category-per-channels-1.2.4"><span class="toc-item-num">1.2.4&nbsp;&nbsp;</span>Category per channels</a></span></li><li><span><i class="fa fa-fw"></i><a href="#Channel-which-still-keep-up-or-thrive-fast-in-the-short-time." data-toc-modified-id="Channel-which-still-keep-up-or-thrive-fast-in-the-short-time.-1.2.5"><span class="toc-item-num">1.2.5&nbsp;&nbsp;</span>Channel which still keep up or thrive fast in the short time.</a></span></li><li><span><i class="fa fa-fw"></i><a href="#Channels-with-less-video-but-great-views" data-toc-modified-id="Channels-with-less-video-but-great-views-1.2.6"><span class="toc-item-num">1.2.6&nbsp;&nbsp;</span>Channels with less video but great views</a></span></li></ul></li><li><span><i class="fa fa-fw"></i><a href="#More-specific-on-Entertainment" data-toc-modified-id="More-specific-on-Entertainment-1.3"><span class="toc-item-num">1.3&nbsp;&nbsp;</span>More specific on Entertainment</a></span></li><li><span><i class="fa fa-fw"></i><a href="#More-specific-on-Eduction" data-toc-modified-id="More-specific-on-Eduction-1.4"><span class="toc-item-num">1.4&nbsp;&nbsp;</span>More specific on Eduction</a></span></li><li><span><i class="fa fa-fw fa-caret-down"></i><a href="#Keywords" data-toc-modified-id="Keywords-1.5"><span class="toc-item-num">1.5&nbsp;&nbsp;</span>Keywords</a></span><ul class="toc-item"><li><span><i class="fa fa-fw"></i><a href="#Wordcloud" data-toc-modified-id="Wordcloud-1.5.1"><span class="toc-item-num">1.5.1&nbsp;&nbsp;</span>Wordcloud</a></span></li></ul></li><li><span><i class="fa fa-fw fa-caret-down"></i><a href="#Conclusion" data-toc-modified-id="Conclusion-1.6"><span class="toc-item-num">1.6&nbsp;&nbsp;</span>Conclusion</a></span><ul class="toc-item"><li><span><i class="fa fa-fw"></i><a href="#Benefits." data-toc-modified-id="Benefits.-1.6.1"><span class="toc-item-num">1.6.1&nbsp;&nbsp;</span>Benefits.</a></span></li><li><span><i class="fa fa-fw"></i><a href="#About-the-content,-just-my-opinion." data-toc-modified-id="About-the-content,-just-my-opinion.-1.6.2"><span class="toc-item-num">1.6.2&nbsp;&nbsp;</span>About the content, just my opinion.</a></span></li></ul></li></ul></li>
+<li>2. Tool for query channels</li>
+</ul></div>
+
+<p>Dataset from top 200,000 channels in Vietnam - Nov 2019 - ver.1</p>
+
+<p><strong>Note: This purpose of analysis for study research. Focus on dataset Vietnam only. Sorry, if this analysis have some error and mistake in research. Also data is vast, some data might miss in this analysis</strong></p>
+
+<p>Reference: <a href="https://www.omnicoreagency.com/youtube-statistics/" target="_blank" rel="nofollow">https://www.omnicoreagency.com/youtube-statistics/</a> for some facts.</p>
+
+<p>The number of people watch YouTube keep increasing every year. Include childrens, teenagers, adults, olders. But what are they watching about? Because YouTube channels in Vietnam are so many, and variety. It’s hard for us to see the overall picture of YouTube Vietnam.</p>
+
+<h2 id="i-goals-of-the-analysis">I. Goals of the analysis</h2>
+
+<p>Most of user often see ‘subscribers number’, and think that channels have most of great videos. But if we look other factors, we might find something interest.</p>
+
+<p>Here is assumptions, and I would like to verify those assumptions:</p>
+
+<ol>
+  <li>Is there any <strong>great channels</strong> that we didn’t know they exists.
+    <ul>
+      <li>Based on other factor beside ‘subscribers’ (like views, or view count/joined date, …)?</li>
+      <li>Based on categories instead of general factor?</li>
+      <li>Based on keywords?</li>
+    </ul>
+  </li>
+  <li>Which channel category (e.g. Entertainment, Gaming, Comedy, etc.) has the largest number views, subscribes, view count/joined date…?
+    <ul>
+      <li>The relative between categories?</li>
+    </ul>
+  </li>
+  <li>Why that channels have large view count?
+    <ul>
+      <li>
+        <p>Something cause view_count on kid channels always larger than other channels. Children have most free time, might be use their childhood to watch YouTube? or something else?</p>
+      </li>
+      <li>Teenager have less time than the children to watch, but still have time to watch YouTube so much?</li>
+      <li>Adults have less time to watch, because they have to work?</li>
+      <li>Older often watch TV channel?</li>
+    </ul>
+  </li>
+</ol>
+
+<p><strong>P.S:</strong></p>
+
+<p>If your YouTube homepage is bore and nothing fun to watch, you can go to analysis below and find the interesting channels and subscribe. And your YouTube will have all the best video to watch. :)</p>
+
+<div class="language-python highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="c1">#invite people for the Kaggle party
+</span><span class="kn">from</span> <span class="nn">IPython.core.interactiveshell</span> <span class="kn">import</span> <span class="n">InteractiveShell</span>
+<span class="n">InteractiveShell</span><span class="o">.</span><span class="n">ast_node_interactivity</span> <span class="o">=</span> <span class="s">"all"</span>
+
+<span class="kn">import</span> <span class="nn">pandas</span> <span class="k">as</span> <span class="n">pd</span>
+<span class="kn">import</span> <span class="nn">matplotlib.pyplot</span> <span class="k">as</span> <span class="n">plt</span>
+<span class="kn">import</span> <span class="nn">seaborn</span> <span class="k">as</span> <span class="n">sns</span>
+<span class="kn">import</span> <span class="nn">numpy</span> <span class="k">as</span> <span class="n">np</span>
+<span class="kn">from</span> <span class="nn">scipy.stats</span> <span class="kn">import</span> <span class="n">norm</span>
+<span class="kn">from</span> <span class="nn">sklearn.preprocessing</span> <span class="kn">import</span> <span class="n">StandardScaler</span>
+<span class="kn">from</span> <span class="nn">scipy</span> <span class="kn">import</span> <span class="n">stats</span>
+<span class="kn">import</span> <span class="nn">warnings</span>
+<span class="kn">from</span> <span class="nn">collections</span> <span class="kn">import</span> <span class="n">Counter</span>
+<span class="kn">import</span> <span class="nn">wordcloud</span>
+<span class="kn">from</span> <span class="nn">underthesea</span> <span class="kn">import</span> <span class="n">word_tokenize</span>
+
+<span class="n">warnings</span><span class="o">.</span><span class="n">filterwarnings</span><span class="p">(</span><span class="s">'ignore'</span><span class="p">)</span>
+<span class="o">%</span><span class="n">matplotlib</span> <span class="n">inline</span>
+</code></pre></div></div>
+
+<div class="language-python highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="c1"># Load dataset, which already cleansing data.
+</span><span class="n">df_train</span> <span class="o">=</span> <span class="n">pd</span><span class="o">.</span><span class="n">read_excel</span><span class="p">(</span><span class="s">'youtube_channel.xlsx'</span><span class="p">)</span>
+</code></pre></div></div>
+
+<div class="language-python highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="n">df_train</span><span class="o">.</span><span class="n">columns</span>
+<span class="n">df_train</span><span class="o">.</span><span class="n">head</span><span class="p">()</span>
+</code></pre></div></div>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Index(['_id', 'url', 'name', 'subscribers_text', 'video_count', 'view_count',
+       'category', 'keywords', 'parent', 'subscribers_infer', 'r_view_p_sub',
+       'r_view_p_joined', 'r_view_p_vid', 'r_joined_p_vid', 'joined_date',
+       'joined_date_seconds', 'name_joined', 'name_vid', 'name_sub_vid',
+       'name_sub', 'name_url'],
+      dtype='object')
+</code></pre></div></div>
+
+<div>
+<style scoped="">
+    .dataframe tbody tr th:only-of-type {
+        vertical-align: middle;
+    }
+
+    .dataframe tbody tr th {
+        vertical-align: top;
+    }
+
+    .dataframe thead th {
+        text-align: right;
+    }
+</style>
+<table border="1" class="dataframe">
+  <thead>
+    <tr style="text-align: right;">
+      <th></th>
+      <th>_id</th>
+      <th>url</th>
+      <th>name</th>
+      <th>subscribers_text</th>
+      <th>video_count</th>
+      <th>view_count</th>
+      <th>category</th>
+      <th>keywords</th>
+      <th>parent</th>
+      <th>subscribers_infer</th>
+      <th>...</th>
+      <th>r_view_p_joined</th>
+      <th>r_view_p_vid</th>
+      <th>r_joined_p_vid</th>
+      <th>joined_date</th>
+      <th>joined_date_seconds</th>
+      <th>name_joined</th>
+      <th>name_vid</th>
+      <th>name_sub_vid</th>
+      <th>name_sub</th>
+      <th>name_url</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <th>0</th>
+      <td>5dd01bfac94e8ed89c37ea91</td>
+      <td>https://www.youtube.com/channel/UC5ezaYrzZpyIt...</td>
+      <td>POPS Kids</td>
+      <td>9.71M</td>
+      <td>7085.0</td>
+      <td>9411018577</td>
+      <td>Film &amp; Animation</td>
+      <td>"phim hoat hinh" "ca nhac thieu nhi" "kenh thi...</td>
+      <td>https://www.youtube.com/channel/UC5ezaYrzZpyIt...</td>
+      <td>9710000</td>
+      <td>...</td>
+      <td>51018</td>
+      <td>1328301</td>
+      <td>26</td>
+      <td>2014-01-14</td>
+      <td>2014-01-14</td>
+      <td>POPS Kids (joined 2014-01-14)</td>
+      <td>POPS Kids (7,085 videos)</td>
+      <td>POPS Kids (9.71M - 7,085 videos)</td>
+      <td>POPS Kids (9.71M)</td>
+      <td>POPS Kids (https://www.youtube.com/channel/UC5...</td>
+    </tr>
+    <tr>
+      <th>1</th>
+      <td>5dd01bfac94e8ed89c37ea9b</td>
+      <td>https://www.youtube.com/channel/UCUgXK2UjZ8G_E...</td>
+      <td>POPS MUSIC</td>
+      <td>7.29M</td>
+      <td>25462.0</td>
+      <td>6610506521</td>
+      <td>Music</td>
+      <td>"pops music" "pops vietnam" "nhac viet 2019" "...</td>
+      <td>https://www.youtube.com/channel/UCUgXK2UjZ8G_E...</td>
+      <td>7290000</td>
+      <td>...</td>
+      <td>31485</td>
+      <td>259622</td>
+      <td>8</td>
+      <td>2013-03-25</td>
+      <td>2013-03-25</td>
+      <td>POPS MUSIC (joined 2013-03-25)</td>
+      <td>POPS MUSIC (25,462 videos)</td>
+      <td>POPS MUSIC (7.29M - 25,462 videos)</td>
+      <td>POPS MUSIC (7.29M)</td>
+      <td>POPS MUSIC (https://www.youtube.com/channel/UC...</td>
+    </tr>
+    <tr>
+      <th>2</th>
+      <td>5dd01bfac94e8ed89c37eaa4</td>
+      <td>https://www.youtube.com/channel/UC6eq3sR4CtbvG...</td>
+      <td>Kênh Thiếu Nhi - BHMEDIA</td>
+      <td>6.06M</td>
+      <td>6078.0</td>
+      <td>4307433103</td>
+      <td>Music</td>
+      <td>"kenh thieu nhi bhmedia" "nhac thieu nhi" "thi...</td>
+      <td>https://www.youtube.com/channel/UC6eq3sR4CtbvG...</td>
+      <td>6060000</td>
+      <td>...</td>
+      <td>24631</td>
+      <td>708692</td>
+      <td>28</td>
+      <td>2014-05-05</td>
+      <td>2014-05-05</td>
+      <td>Kênh Thiếu Nhi - BHMEDIA (joined 2014-05-05)</td>
+      <td>Kênh Thiếu Nhi - BHMEDIA (6,078 videos)</td>
+      <td>Kênh Thiếu Nhi - BHMEDIA (6.06M - 6,078 videos)</td>
+      <td>Kênh Thiếu Nhi - BHMEDIA (6.06M)</td>
+      <td>Kênh Thiếu Nhi - BHMEDIA (https://www.youtube....</td>
+    </tr>
+    <tr>
+      <th>3</th>
+      <td>5dd01bfac94e8ed89c37ea9e</td>
+      <td>https://www.youtube.com/channel/UCSJsjCiTl2lou...</td>
+      <td>Thơ Nguyễn</td>
+      <td>6.91M</td>
+      <td>895.0</td>
+      <td>4227680361</td>
+      <td>People &amp; Blogs</td>
+      <td>"Thơ Nguyễn"</td>
+      <td>https://www.youtube.com/channel/UCSJsjCiTl2lou...</td>
+      <td>6910000</td>
+      <td>...</td>
+      <td>36138</td>
+      <td>4723665</td>
+      <td>130</td>
+      <td>2016-03-05</td>
+      <td>2016-03-05</td>
+      <td>Thơ Nguyễn (joined 2016-03-05)</td>
+      <td>Thơ Nguyễn (895 videos)</td>
+      <td>Thơ Nguyễn (6.91M - 895 videos)</td>
+      <td>Thơ Nguyễn (6.91M)</td>
+      <td>Thơ Nguyễn (https://www.youtube.com/channel/UC...</td>
+    </tr>
+    <tr>
+      <th>4</th>
+      <td>5dd01bfac94e8ed89c37ea8b</td>
+      <td>https://www.youtube.com/channel/UC0jDoh3tVXCaq...</td>
+      <td>FAP TV</td>
+      <td>10.3M</td>
+      <td>447.0</td>
+      <td>4034410388</td>
+      <td>Film &amp; Animation</td>
+      <td>"FAP TV" "Com nguoi" "phim hai" "fap tivi" faptv</td>
+      <td>https://www.youtube.com/channel/UC0jDoh3tVXCaq...</td>
+      <td>10300000</td>
+      <td>...</td>
+      <td>22320</td>
+      <td>9025526</td>
+      <td>404</td>
+      <td>2014-02-26</td>
+      <td>2014-02-26</td>
+      <td>FAP TV (joined 2014-02-26)</td>
+      <td>FAP TV (447 videos)</td>
+      <td>FAP TV (10.3M - 447 videos)</td>
+      <td>FAP TV (10.3M)</td>
+      <td>FAP TV (https://www.youtube.com/channel/UC0jDo...</td>
+    </tr>
+  </tbody>
+</table>
+<p>5 rows × 21 columns</p>
+</div>
+
+<div class="language-python highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="n">df_train</span><span class="o">.</span><span class="n">describe</span><span class="p">()</span>
+</code></pre></div></div>
+
+<div>
+<style scoped="">
+    .dataframe tbody tr th:only-of-type {
+        vertical-align: middle;
+    }
+
+    .dataframe tbody tr th {
+        vertical-align: top;
+    }
+
+    .dataframe thead th {
+        text-align: right;
+    }
+</style>
+<table border="1" class="dataframe">
+  <thead>
+    <tr style="text-align: right;">
+      <th></th>
+      <th>view_count</th>
+      <th>subscribers_infer</th>
+      <th>r_view_p_sub</th>
+      <th>r_view_p_joined</th>
+      <th>r_view_p_vid</th>
+      <th>r_joined_p_vid</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <th>count</th>
+      <td>2.160700e+04</td>
+      <td>2.160700e+04</td>
+      <td>21607.000000</td>
+      <td>21607.000000</td>
+      <td>2.160700e+04</td>
+      <td>21607.000000</td>
+    </tr>
+    <tr>
+      <th>mean</th>
+      <td>2.668484e+07</td>
+      <td>8.124845e+04</td>
+      <td>407.559124</td>
+      <td>249.443236</td>
+      <td>1.667015e+05</td>
+      <td>2839.976674</td>
+    </tr>
+    <tr>
+      <th>std</th>
+      <td>1.557322e+08</td>
+      <td>3.213656e+05</td>
+      <td>1115.933585</td>
+      <td>1209.028898</td>
+      <td>7.942098e+05</td>
+      <td>9203.371213</td>
+    </tr>
+    <tr>
+      <th>min</th>
+      <td>2.896000e+03</td>
+      <td>1.200000e+01</td>
+      <td>0.000000</td>
+      <td>1.000000</td>
+      <td>0.000000e+00</td>
+      <td>0.000000</td>
+    </tr>
+    <tr>
+      <th>25%</th>
+      <td>7.875605e+05</td>
+      <td>2.740000e+03</td>
+      <td>178.000000</td>
+      <td>8.000000</td>
+      <td>7.585500e+03</td>
+      <td>282.000000</td>
+    </tr>
+    <tr>
+      <th>50%</th>
+      <td>2.274931e+06</td>
+      <td>8.771000e+03</td>
+      <td>345.000000</td>
+      <td>24.000000</td>
+      <td>2.470900e+04</td>
+      <td>759.000000</td>
+    </tr>
+    <tr>
+      <th>75%</th>
+      <td>9.681355e+06</td>
+      <td>4.005500e+04</td>
+      <td>393.000000</td>
+      <td>98.000000</td>
+      <td>8.770500e+04</td>
+      <td>2110.000000</td>
+    </tr>
+    <tr>
+      <th>max</th>
+      <td>9.411019e+09</td>
+      <td>1.030000e+07</td>
+      <td>81890.000000</td>
+      <td>51018.000000</td>
+      <td>4.304108e+07</td>
+      <td>274752.000000</td>
+    </tr>
+  </tbody>
+</table>
+</div>
+
+<h2 id="general-analysis">General analysis</h2>
+
+<h3 id="channels-with-most-subscribers">Channels with most subscribers.</h3>
+
+<p>Nothing to comment. Just a fact.</p>
+
+<p>Note: Other channels with hidden subscriber stats. Note symbol ~ is (~ guess number).</p>
+
+<div class="language-python highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="n">cdf</span> <span class="o">=</span> <span class="n">df_train</span><span class="o">.</span><span class="n">sort_values</span><span class="p">(</span><span class="s">"subscribers_infer"</span><span class="p">,</span> <span class="n">ascending</span><span class="o">=</span><span class="bp">False</span><span class="p">)</span><span class="o">.</span><span class="n">head</span><span class="p">(</span><span class="mi">30</span><span class="p">)</span>
+
+<span class="n">fig</span><span class="p">,</span> <span class="n">ax</span> <span class="o">=</span> <span class="n">plt</span><span class="o">.</span><span class="n">subplots</span><span class="p">(</span><span class="n">figsize</span><span class="o">=</span><span class="p">(</span><span class="mi">10</span><span class="p">,</span><span class="mi">10</span><span class="p">))</span>
+<span class="n">_</span> <span class="o">=</span> <span class="n">sns</span><span class="o">.</span><span class="n">barplot</span><span class="p">(</span><span class="n">x</span><span class="o">=</span><span class="s">"subscribers_infer"</span><span class="p">,</span> <span class="n">y</span><span class="o">=</span><span class="s">"name_sub_vid"</span><span class="p">,</span> <span class="n">data</span><span class="o">=</span><span class="n">cdf</span><span class="p">,</span>
+                <span class="n">palette</span><span class="o">=</span><span class="n">sns</span><span class="o">.</span><span class="n">cubehelix_palette</span><span class="p">(</span><span class="n">n_colors</span><span class="o">=</span><span class="mi">30</span><span class="p">,</span> <span class="n">reverse</span><span class="o">=</span><span class="bp">True</span><span class="p">),</span> <span class="n">ax</span><span class="o">=</span><span class="n">ax</span><span class="p">)</span>
+<span class="n">_</span> <span class="o">=</span> <span class="n">ax</span><span class="o">.</span><span class="nb">set</span><span class="p">(</span><span class="n">xlabel</span><span class="o">=</span><span class="s">"No. of subscribers"</span><span class="p">,</span> <span class="n">ylabel</span><span class="o">=</span><span class="s">"Channel (Subscribers)"</span><span class="p">)</span>
+</code></pre></div></div>
+
+<p><img src="/assets/images/2019_11_01_channels/channels_11_0.png" alt="png" /></p>
+
+<h3 id="number-of-subscribers-vs-views">Number of subscribers vs. views</h3>
+
+<p>Sort DESC by subscribers, compare with view_count. And all top channels belongs to Entertainment category</p>
+
+<p>All the kid channels quite have large no. of view than other channels. Might be, they have most time to watch.</p>
+
+<ul>
+  <li>POPS Kids (large no. of videos)</li>
+  <li>Bé Bún - Bé Bắp</li>
+  <li>Thơ Nguyễn</li>
+  <li>Kênh Thiếu Nhi - BHMEDIA (large no. of videos)</li>
+  <li>Kid Studio (large no. of videos)</li>
+</ul>
+
+<p>Channels have a few videos, but have large no. of views. (Most video attract a lot of views.)</p>
+
+<ul>
+  <li>Vanh Leg</li>
+  <li>Sơn Tùng M-TP Oficial</li>
+  <li>Hau Hoang</li>
+  <li>K-ICM Offical</li>
+  <li>iGAMING TV</li>
+</ul>
+
+<div class="language-python highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="n">cdf</span> <span class="o">=</span> <span class="n">df_train</span><span class="o">.</span><span class="n">sort_values</span><span class="p">(</span><span class="s">"subscribers_infer"</span><span class="p">,</span> <span class="n">ascending</span><span class="o">=</span><span class="bp">False</span><span class="p">)</span><span class="o">.</span><span class="n">head</span><span class="p">(</span><span class="mi">30</span><span class="p">)</span>
+<span class="n">fig</span><span class="p">,</span> <span class="n">ax</span> <span class="o">=</span> <span class="n">plt</span><span class="o">.</span><span class="n">subplots</span><span class="p">(</span><span class="n">figsize</span><span class="o">=</span><span class="p">(</span><span class="mi">12</span><span class="p">,</span><span class="mi">10</span><span class="p">))</span>
+<span class="n">_</span> <span class="o">=</span> <span class="n">sns</span><span class="o">.</span><span class="n">barplot</span><span class="p">(</span><span class="n">x</span><span class="o">=</span><span class="s">"view_count"</span><span class="p">,</span> <span class="n">y</span><span class="o">=</span><span class="s">"name_sub_vid"</span><span class="p">,</span> <span class="n">data</span><span class="o">=</span><span class="n">cdf</span><span class="p">,</span>
+                <span class="n">palette</span><span class="o">=</span><span class="n">sns</span><span class="o">.</span><span class="n">cubehelix_palette</span><span class="p">(</span><span class="n">n_colors</span><span class="o">=</span><span class="mi">30</span><span class="p">,</span> <span class="n">reverse</span><span class="o">=</span><span class="bp">True</span><span class="p">),</span> <span class="n">ax</span><span class="o">=</span><span class="n">ax</span><span class="p">)</span>
+<span class="n">_</span> <span class="o">=</span> <span class="n">ax</span><span class="o">.</span><span class="nb">set</span><span class="p">(</span><span class="n">xlabel</span><span class="o">=</span><span class="s">"No. of views"</span><span class="p">,</span> <span class="n">ylabel</span><span class="o">=</span><span class="s">"Channel (Subscribers)"</span><span class="p">)</span>
+</code></pre></div></div>
+
+<p><img src="/assets/images/2019_11_01_channels/channels_13_0.png" alt="png" /></p>
+
+<h3 id="number-of-videos-vs-views">Number of videos vs. views</h3>
+
+<p>Again, POPS MUSIC have most views.</p>
+
+<p>Other channel comes from traditional TV.
+They start using to YouTube for broadcast because of increasing users on YouTube. Catch the trends before TV is out of date.</p>
+
+<div class="language-python highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="n">cdf</span> <span class="o">=</span> <span class="n">df_train</span><span class="o">.</span><span class="n">sort_values</span><span class="p">(</span><span class="s">"video_count"</span><span class="p">,</span> <span class="n">ascending</span><span class="o">=</span><span class="bp">False</span><span class="p">)</span><span class="o">.</span><span class="n">head</span><span class="p">(</span><span class="mi">40</span><span class="p">)</span><span class="o">.</span><span class="n">sort_values</span><span class="p">(</span><span class="s">"view_count"</span><span class="p">,</span> <span class="n">ascending</span><span class="o">=</span><span class="bp">False</span><span class="p">)</span>
+
+<span class="n">fig</span><span class="p">,</span> <span class="n">ax</span> <span class="o">=</span> <span class="n">plt</span><span class="o">.</span><span class="n">subplots</span><span class="p">(</span><span class="n">figsize</span><span class="o">=</span><span class="p">(</span><span class="mi">8</span><span class="p">,</span><span class="mi">8</span><span class="p">))</span>
+<span class="n">_</span> <span class="o">=</span> <span class="n">sns</span><span class="o">.</span><span class="n">barplot</span><span class="p">(</span><span class="n">x</span><span class="o">=</span><span class="s">"view_count"</span><span class="p">,</span> <span class="n">y</span><span class="o">=</span><span class="s">"name_vid"</span><span class="p">,</span> <span class="n">data</span><span class="o">=</span><span class="n">cdf</span><span class="p">,</span>
+                <span class="n">palette</span><span class="o">=</span><span class="n">sns</span><span class="o">.</span><span class="n">cubehelix_palette</span><span class="p">(</span><span class="n">n_colors</span><span class="o">=</span><span class="mi">40</span><span class="p">,</span> <span class="n">reverse</span><span class="o">=</span><span class="bp">True</span><span class="p">),</span> <span class="n">ax</span><span class="o">=</span><span class="n">ax</span><span class="p">)</span>
+<span class="n">_</span> <span class="o">=</span> <span class="n">ax</span><span class="o">.</span><span class="nb">set</span><span class="p">(</span><span class="n">xlabel</span><span class="o">=</span><span class="s">"No. of views"</span><span class="p">,</span> <span class="n">ylabel</span><span class="o">=</span><span class="s">"Channel (No. of Videos)"</span><span class="p">)</span>
+</code></pre></div></div>
+
+<p><img src="/assets/images/2019_11_01_channels/channels_15_0.png" alt="png" /></p>
+
+<h3 id="category-per-channels">Category per channels</h3>
+
+<p><strong>Note</strong>: Category ‘People &amp; Blogs’ quite mix. Some of channel in this category might belongs to Education, but most of them still entertain</p>
+
+<p>Number of channel on entertaiment:</p>
+
+<ul>
+  <li>People &amp; Blogs</li>
+  <li>Entertaiment</li>
+  <li>Music</li>
+  <li>Gaming</li>
+  <li>Film &amp; Animation</li>
+  <li>…</li>
+</ul>
+
+<p>Number of channel on education:</p>
+
+<ul>
+  <li>Education</li>
+  <li>Howto &amp; style</li>
+  <li>Science &amp; technology</li>
+  <li>…</li>
+</ul>
+
+<p>The ration for education (7%), entertaiment (93%)</p>
+
+<ul>
+  <li>Most of channel on entertainment easy to attract user for monetize than education.</li>
+  <li>Also on kid channels.</li>
+</ul>
+
+<div class="language-python highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="n">cdf</span> <span class="o">=</span> <span class="n">df_train</span><span class="o">.</span><span class="n">groupby</span><span class="p">(</span><span class="s">"category"</span><span class="p">)</span><span class="o">.</span><span class="n">size</span><span class="p">()</span><span class="o">.</span><span class="n">reset_index</span><span class="p">(</span><span class="n">name</span><span class="o">=</span><span class="s">"channels"</span><span class="p">)</span><span class="o">.</span><span class="n">sort_values</span><span class="p">(</span><span class="s">"channels"</span><span class="p">,</span> <span class="n">ascending</span><span class="o">=</span><span class="bp">False</span><span class="p">)</span>
+<span class="nb">list</span><span class="p">(</span><span class="n">cdf</span><span class="p">[</span><span class="s">'category'</span><span class="p">])</span>
+
+<span class="n">fig</span><span class="p">,</span> <span class="n">ax</span> <span class="o">=</span> <span class="n">plt</span><span class="o">.</span><span class="n">subplots</span><span class="p">(</span><span class="n">figsize</span><span class="o">=</span><span class="p">(</span><span class="mi">12</span><span class="p">,</span><span class="mi">8</span><span class="p">))</span>
+<span class="n">_</span> <span class="o">=</span> <span class="n">sns</span><span class="o">.</span><span class="n">barplot</span><span class="p">(</span><span class="n">x</span><span class="o">=</span><span class="s">"channels"</span><span class="p">,</span> <span class="n">y</span><span class="o">=</span><span class="s">"category"</span><span class="p">,</span> <span class="n">data</span><span class="o">=</span><span class="n">cdf</span><span class="p">,</span>
+                <span class="n">palette</span><span class="o">=</span><span class="n">sns</span><span class="o">.</span><span class="n">cubehelix_palette</span><span class="p">(</span><span class="n">n_colors</span><span class="o">=</span><span class="mi">20</span><span class="p">,</span> <span class="n">reverse</span><span class="o">=</span><span class="bp">True</span><span class="p">),</span> <span class="n">ax</span><span class="o">=</span><span class="n">ax</span><span class="p">)</span>
+<span class="n">_</span> <span class="o">=</span> <span class="n">ax</span><span class="o">.</span><span class="nb">set</span><span class="p">(</span><span class="n">xlabel</span><span class="o">=</span><span class="s">"No. of channels"</span><span class="p">,</span> <span class="n">ylabel</span><span class="o">=</span><span class="s">"Category"</span><span class="p">)</span>
+</code></pre></div></div>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>['People &amp; Blogs',
+ 'Entertainment',
+ 'Music',
+ 'Gaming',
+ 'Film &amp; Animation',
+ 'Education',
+ 'Howto &amp; Style',
+ 'News &amp; Politics',
+ 'Autos &amp; Vehicles',
+ 'Science &amp; Technology',
+ 'Travel &amp; Events',
+ 'Sports',
+ 'Comedy',
+ 'Pets &amp; Animals',
+ 'Nonprofits &amp; Activism']
+</code></pre></div></div>
+
+<p><img src="/assets/images/2019_11_01_channels/channels_17_1.png" alt="png" /></p>
+
+<h3 id="channel-which-still-keep-up-or-thrive-fast-in-the-short-time">Channel which still keep up or thrive fast in the short time.</h3>
+
+<p>Note: Dataset at Nov 2019</p>
+
+<p><strong>r_view_p_joined = view_count / joined_date</strong></p>
+
+<ul>
+  <li>if channel discontinue, view_count / increase time of joined_date =&gt; decrease r_view_p_joined</li>
+  <li>if channel thrive fast, large view_count / small time of joined_date =&gt; high r_view_p_joined</li>
+  <li>if channel still keep up, increase view_count/ increase time of joined_date =&gt; r_view_p_joined keep up</li>
+</ul>
+
+<div class="language-python highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="n">cdf</span> <span class="o">=</span> <span class="n">df_train</span><span class="o">.</span><span class="n">sort_values</span><span class="p">(</span><span class="s">"r_view_p_joined"</span><span class="p">,</span> <span class="n">ascending</span><span class="o">=</span><span class="bp">False</span><span class="p">)</span><span class="o">.</span><span class="n">head</span><span class="p">(</span><span class="mi">30</span><span class="p">)</span><span class="o">.</span><span class="n">sort_values</span><span class="p">(</span><span class="s">"joined_date_seconds"</span><span class="p">,</span> <span class="n">ascending</span><span class="o">=</span><span class="bp">False</span><span class="p">)</span>
+<span class="n">fig</span><span class="p">,</span> <span class="n">ax</span> <span class="o">=</span> <span class="n">plt</span><span class="o">.</span><span class="n">subplots</span><span class="p">(</span><span class="n">figsize</span><span class="o">=</span><span class="p">(</span><span class="mi">10</span><span class="p">,</span><span class="mi">8</span><span class="p">))</span>
+<span class="n">_</span> <span class="o">=</span> <span class="n">sns</span><span class="o">.</span><span class="n">barplot</span><span class="p">(</span><span class="n">x</span><span class="o">=</span><span class="s">"r_view_p_joined"</span><span class="p">,</span> <span class="n">y</span><span class="o">=</span><span class="s">"name_joined"</span><span class="p">,</span> <span class="n">data</span><span class="o">=</span><span class="n">cdf</span><span class="p">,</span>
+                <span class="n">palette</span><span class="o">=</span><span class="n">sns</span><span class="o">.</span><span class="n">cubehelix_palette</span><span class="p">(</span><span class="n">n_colors</span><span class="o">=</span><span class="mi">30</span><span class="p">,</span> <span class="n">reverse</span><span class="o">=</span><span class="bp">True</span><span class="p">),</span> <span class="n">ax</span><span class="o">=</span><span class="n">ax</span><span class="p">)</span>
+<span class="n">_</span> <span class="o">=</span> <span class="n">ax</span><span class="o">.</span><span class="nb">set</span><span class="p">(</span><span class="n">xlabel</span><span class="o">=</span><span class="s">"Views / Joined Date"</span><span class="p">,</span> <span class="n">ylabel</span><span class="o">=</span><span class="s">"Channel (No. of Videos)"</span><span class="p">)</span>
+</code></pre></div></div>
+
+<p><img src="/assets/images/2019_11_01_channels/channels_19_0.png" alt="png" /></p>
+
+<h3 id="channels-with-less-video-but-great-views">Channels with less video but great views</h3>
+
+<p><strong>r_view_p_vid = views / videos</strong></p>
+
+<p>Channels with a lot of videos often have large no. of views.
+But with this factor, those channels care about the quality per videos rather than use a lot of videos.</p>
+
+<p>This factors check great contents.</p>
+
+<div class="language-python highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="n">cdf</span> <span class="o">=</span> <span class="n">df_train</span><span class="p">[</span><span class="n">df_train</span><span class="p">[</span><span class="s">'video_count'</span><span class="p">]</span> <span class="o">&gt;</span> <span class="mi">3</span><span class="p">]</span><span class="o">.</span><span class="n">sort_values</span><span class="p">(</span><span class="s">"r_view_p_vid"</span><span class="p">,</span> <span class="n">ascending</span><span class="o">=</span><span class="bp">False</span><span class="p">)</span><span class="o">.</span><span class="n">head</span><span class="p">(</span><span class="mi">30</span><span class="p">)</span>
+<span class="n">fig</span><span class="p">,</span> <span class="n">ax</span> <span class="o">=</span> <span class="n">plt</span><span class="o">.</span><span class="n">subplots</span><span class="p">(</span><span class="n">figsize</span><span class="o">=</span><span class="p">(</span><span class="mi">10</span><span class="p">,</span><span class="mi">8</span><span class="p">))</span>
+<span class="n">_</span> <span class="o">=</span> <span class="n">sns</span><span class="o">.</span><span class="n">barplot</span><span class="p">(</span><span class="n">x</span><span class="o">=</span><span class="s">"r_view_p_vid"</span><span class="p">,</span> <span class="n">y</span><span class="o">=</span><span class="s">"name_vid"</span><span class="p">,</span> <span class="n">data</span><span class="o">=</span><span class="n">cdf</span><span class="p">,</span>
+                <span class="n">palette</span><span class="o">=</span><span class="n">sns</span><span class="o">.</span><span class="n">cubehelix_palette</span><span class="p">(</span><span class="n">n_colors</span><span class="o">=</span><span class="mi">30</span><span class="p">,</span> <span class="n">reverse</span><span class="o">=</span><span class="bp">True</span><span class="p">),</span> <span class="n">ax</span><span class="o">=</span><span class="n">ax</span><span class="p">)</span>
+<span class="n">_</span> <span class="o">=</span> <span class="n">ax</span><span class="o">.</span><span class="nb">set</span><span class="p">(</span><span class="n">xlabel</span><span class="o">=</span><span class="s">"Views / Videos"</span><span class="p">,</span> <span class="n">ylabel</span><span class="o">=</span><span class="s">"Channel"</span><span class="p">)</span>
+</code></pre></div></div>
+
+<p><img src="/assets/images/2019_11_01_channels/channels_21_0.png" alt="png" /></p>
+
+<h2 id="more-specific-on-entertainment">More specific on Entertainment</h2>
+
+<p>View count per category</p>
+
+<ul>
+  <li>Entertainment</li>
+  <li>Music</li>
+  <li>People &amp; Blog</li>
+</ul>
+
+<div class="language-python highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="n">x_metric</span> <span class="o">=</span> <span class="s">'view_count'</span>
+
+<span class="k">def</span> <span class="nf">draw_per_category</span><span class="p">(</span><span class="n">category</span><span class="p">):</span>
+    <span class="n">cdf</span> <span class="o">=</span> <span class="n">df_train</span><span class="p">[</span><span class="n">df_train</span><span class="p">[</span><span class="s">'category'</span><span class="p">]</span> <span class="o">==</span> <span class="n">category</span><span class="p">]</span><span class="o">.</span><span class="n">sort_values</span><span class="p">(</span><span class="n">x_metric</span><span class="p">,</span> <span class="n">ascending</span><span class="o">=</span><span class="bp">False</span><span class="p">)</span><span class="o">.</span><span class="n">head</span><span class="p">(</span><span class="mi">30</span><span class="p">)</span>
+    <span class="n">fig</span><span class="p">,</span> <span class="n">ax</span> <span class="o">=</span> <span class="n">plt</span><span class="o">.</span><span class="n">subplots</span><span class="p">(</span><span class="n">figsize</span><span class="o">=</span><span class="p">(</span><span class="mi">10</span><span class="p">,</span><span class="mi">8</span><span class="p">))</span>
+    <span class="n">_</span> <span class="o">=</span> <span class="n">sns</span><span class="o">.</span><span class="n">barplot</span><span class="p">(</span><span class="n">x</span><span class="o">=</span><span class="n">x_metric</span><span class="p">,</span> <span class="n">y</span><span class="o">=</span><span class="s">"name_sub_vid"</span><span class="p">,</span> <span class="n">data</span><span class="o">=</span><span class="n">cdf</span><span class="p">,</span>
+                <span class="n">palette</span><span class="o">=</span><span class="n">sns</span><span class="o">.</span><span class="n">cubehelix_palette</span><span class="p">(</span><span class="n">n_colors</span><span class="o">=</span><span class="mi">30</span><span class="p">,</span> <span class="n">reverse</span><span class="o">=</span><span class="bp">True</span><span class="p">),</span> <span class="n">ax</span><span class="o">=</span><span class="n">ax</span><span class="p">)</span>
+    <span class="n">_</span> <span class="o">=</span> <span class="n">ax</span><span class="o">.</span><span class="nb">set</span><span class="p">(</span><span class="n">xlabel</span><span class="o">=</span><span class="n">x_metric</span><span class="p">,</span> <span class="n">ylabel</span><span class="o">=</span><span class="s">"Channel - "</span> <span class="o">+</span> <span class="n">category</span><span class="p">)</span>
+
+
+<span class="n">draw_per_category</span><span class="p">(</span><span class="s">'Entertainment'</span><span class="p">)</span>
+<span class="n">draw_per_category</span><span class="p">(</span><span class="s">'Music'</span><span class="p">)</span>
+<span class="n">draw_per_category</span><span class="p">(</span><span class="s">'People &amp; Blogs'</span><span class="p">)</span>
+<span class="n">draw_per_category</span><span class="p">(</span><span class="s">'Gaming'</span><span class="p">)</span>
+<span class="n">draw_per_category</span><span class="p">(</span><span class="s">'Film &amp; Animation'</span><span class="p">)</span>
+
+</code></pre></div></div>
+
+<p><img src="/assets/images/2019_11_01_channels/channels_23_0.png" alt="png" /></p>
+
+<p><img src="/assets/images/2019_11_01_channels/channels_23_1.png" alt="png" /></p>
+
+<p><img src="/assets/images/2019_11_01_channels/channels_23_2.png" alt="png" /></p>
+
+<p><img src="/assets/images/2019_11_01_channels/channels_23_3.png" alt="png" /></p>
+
+<p><img src="/assets/images/2019_11_01_channels/channels_23_4.png" alt="png" /></p>
+
+<h2 id="more-specific-on-eduction">More specific on Eduction</h2>
+
+<p>View count per category</p>
+<ul>
+  <li>Education</li>
+  <li>Howto &amp; Style</li>
+  <li>Science &amp; Technology</li>
+</ul>
+
+<p>More channels Education is for kids? Quite strange.</p>
+
+<div class="language-python highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="n">draw_per_category</span><span class="p">(</span><span class="s">'Education'</span><span class="p">)</span>
+<span class="n">draw_per_category</span><span class="p">(</span><span class="s">'Howto &amp; Style'</span><span class="p">)</span>
+<span class="n">draw_per_category</span><span class="p">(</span><span class="s">'Science &amp; Technology'</span><span class="p">)</span>
+
+</code></pre></div></div>
+
+<p><img src="/assets/images/2019_11_01_channels/channels_25_0.png" alt="png" /></p>
+
+<p><img src="/assets/images/2019_11_01_channels/channels_25_1.png" alt="png" /></p>
+
+<p><img src="/assets/images/2019_11_01_channels/channels_25_2.png" alt="png" /></p>
+
+<h2 id="keywords">Keywords</h2>
+
+<p>Keywords often frequently appear in channel title</p>
+
+<div class="language-python highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="n">title_words</span> <span class="o">=</span> <span class="nb">list</span><span class="p">(</span><span class="n">df_train</span><span class="p">[</span><span class="s">"name"</span><span class="p">]</span><span class="o">.</span><span class="nb">apply</span><span class="p">(</span><span class="k">lambda</span> <span class="n">x</span><span class="p">:</span> <span class="n">word_tokenize</span><span class="p">(</span><span class="nb">str</span><span class="p">(</span><span class="n">x</span><span class="p">)</span><span class="o">.</span><span class="n">lower</span><span class="p">())</span> <span class="p">))</span>
+<span class="n">title_words</span> <span class="o">=</span> <span class="p">[</span><span class="n">x</span> <span class="k">for</span> <span class="n">y</span> <span class="ow">in</span> <span class="n">title_words</span> <span class="k">for</span> <span class="n">x</span> <span class="ow">in</span> <span class="n">y</span><span class="p">]</span>
+<span class="n">Counter</span><span class="p">(</span><span class="n">title_words</span><span class="p">)</span><span class="o">.</span><span class="n">most_common</span><span class="p">(</span><span class="mi">25</span><span class="p">)</span>
+</code></pre></div></div>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>[('tv', 1566),
+ ('-', 1358),
+ ('việt', 812),
+ ('official', 778),
+ ('channel', 669),
+ ('nam', 636),
+ ('nhạc', 488),
+ ('anh', 403),
+ ('phim', 399),
+ ('vlogs', 388),
+ ('vlog', 385),
+ ('hay', 326),
+ ('music', 303),
+ ('vietnam', 295),
+ ('kênh', 286),
+ ('nguyễn', 284),
+ ('.', 266),
+ ('minh', 248),
+ ('cuộc sống', 242),
+ ('giải trí', 224),
+ ('miền', 223),
+ ('hoàng', 209),
+ ('tin', 200),
+ ('&amp;', 198),
+ ('nguyen', 198)]
+</code></pre></div></div>
+
+<p><strong>Wordcloud</strong></p>
+
+<p>Note: việt, vietnam, channel, kênh, official are just <strong>postfix</strong> of channel name.</p>
+
+<ol>
+  <li>TV is keyword most appear for channel name</li>
+  <li>nhạc, music</li>
+  <li>vlogs, vlog</li>
+  <li>phim</li>
+  <li>other… (cuộc sống, giải trí, tin tức, …)</li>
+</ol>
+
+<div class="language-python highlighter-rouge"><div class="highlight"><pre class="highlight"><code>
+<span class="n">wc</span> <span class="o">=</span> <span class="n">wordcloud</span><span class="o">.</span><span class="n">WordCloud</span><span class="p">(</span><span class="n">width</span><span class="o">=</span><span class="mi">1200</span><span class="p">,</span> <span class="n">height</span><span class="o">=</span><span class="mi">500</span><span class="p">,</span> 
+                         <span class="n">collocations</span><span class="o">=</span><span class="bp">False</span><span class="p">,</span> <span class="n">background_color</span><span class="o">=</span><span class="s">"white"</span><span class="p">,</span> 
+                         <span class="n">colormap</span><span class="o">=</span><span class="s">"tab20b"</span><span class="p">)</span><span class="o">.</span><span class="n">generate</span><span class="p">(</span><span class="s">" "</span><span class="o">.</span><span class="n">join</span><span class="p">(</span><span class="n">title_words</span><span class="p">))</span>
+<span class="n">_</span> <span class="o">=</span> <span class="n">plt</span><span class="o">.</span><span class="n">figure</span><span class="p">(</span><span class="n">figsize</span><span class="o">=</span><span class="p">(</span><span class="mi">15</span><span class="p">,</span><span class="mi">10</span><span class="p">))</span>
+<span class="n">_</span> <span class="o">=</span> <span class="n">plt</span><span class="o">.</span><span class="n">imshow</span><span class="p">(</span><span class="n">wc</span><span class="p">,</span> <span class="n">interpolation</span><span class="o">=</span><span class="s">'bilinear'</span><span class="p">)</span>
+<span class="n">_</span> <span class="o">=</span> <span class="n">plt</span><span class="o">.</span><span class="n">axis</span><span class="p">(</span><span class="s">"off"</span><span class="p">)</span>
+</code></pre></div></div>
+
+<p><img src="/assets/images/2019_11_01_channels/channels_29_0.png" alt="png" /></p>
+
+<h2 id="conclusion">Conclusion</h2>
+
+<h3 id="benefits">Benefits.</h3>
+
+<ul>
+  <li>Sometime, as YouTuber should know trending on YouTube to adapt and change follow the demand of audience.</li>
+  <li>Knowing content of your competitors produce, and might be they know audience’s demand, might help your channel survive</li>
+  <li>Or if you’re just normal user who want to find interest channel to learn or entertain, this analysis is for you. <strong>(All the best channel included)</strong></li>
+</ul>
+
+<h3 id="about-the-content-just-my-opinion">About the content, just my opinion.</h3>
+
+<p>Reference: Veritasium Channel</p>
+
+<p>“My Video Went Viral. Here’s Why” (<a href="https://www.youtube.com/watch?v=fHsa9DqmId8" target="_blank" rel="nofollow">https://www.youtube.com/watch?v=fHsa9DqmId8</a>)</p>
+
+<ul>
+  <li>“Audience change their taste, algorithm reflect their demand, youtuber chase the algorithm to survive”. The circle repeat, and repeat.</li>
+  <li>The quality content depends on demand of audience. What content are audience want to watch? Great or poor content, depend on them.</li>
+  <li>Hope YouTuber keep up produce great content.</li>
+</ul>
+
+<p>I provided tool below which query channel in sub-category. Hope you find something interest.
+And will continue analysis on 500,000 videos of top channels in Vietnam. To be continue….</p>
+
+<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" />
+
+<link rel="stylesheet" href="https://cdn.datatables.net/1.10.20/css/dataTables.bootstrap.min.css" />
+
+<link rel="stylesheet" href="https://cdn.datatables.net/1.10.20/css/jquery.dataTables.min.css" />
+
+<script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.lazyload/1.9.1/jquery.lazyload.min.js"></script>
+
+<script src="https://cdn.datatables.net/1.10.20/js/jquery.dataTables.min.js"></script>
+
+<script src="https://cdn.datatables.net/1.10.20/js/dataTables.bootstrap.min.js"></script>
+
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+
+<style>
+    .float-left {
+        float: left
+    }
+</style>
+
+<div class="row">
+    <hr />
+    <h1>II. Tool for query top channels</h1>
+    <p>Select category or value, and click search</p>
+
+
+    <label for="by_category" class="float-left">Category: </label>
+    <span class="float-left">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span>
+    <select name="by_category" id="by_category" class="float-left">
+        <option value="any">Any</option>
+        <option value="people_blogs">People &amp; Blogs</option>
+        <option value="entertainment">Entertainment</option>
+        <option value="music">Music</option>
+        <option value="gaming">Gaming</option>
+        <option value="film_animation">Film &amp; Animation</option>
+        <option value="education">Education</option>
+        <option value="howto_style">Howto &amp; Style</option>
+        <option value="news_politics">News &amp; Politics</option>
+        <option value="autos_vehicles">Autos &amp; Vehicles</option>
+        <option value="science_technology">Science &amp; Technology</option>
+        <option value="travel_events">Travel &amp; Events</option>
+        <option value="sports">Sports</option>
+        <option value="comedy">Comedy</option>
+        <option value="pets_animals">Pets &amp; Animals</option>
+        <option value="nonprofits_activism">Nonprofits &amp; Activism</option>
+    </select>
+    <span class="float-left">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span>
+
+    <label for="by_value" class="float-left">Value: </label>
+    <span class="float-left">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span>
+
+    <select name="by_value" id="by_value" class="float-left">
+        <option value="subscribers_infer">Subscribers</option>
+        <option value="view_count">View Count</option>
+        <option value="r_view_p_vid">View / Video</option>
+        <option value="r_view_p_joined">View / Joined</option>
+    </select>
+    <span class="float-left">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span>
+
+    <button class="btn btn--primary" id="query_data">Search</button>
+
+</div>
+
+<p><br /><br /></p>
+<hr />
+
+<p><span id="message"></span></p>
+<table id="channel_query"></table>
+
+<script>
+    var _sample = {"data": [["_UdIvyF6KtJ7EmbinWeu3gbOCZ9yJyB8RGGw", "FAP TV (10.3M - 447 videos)", 10300000], ["-3fBeacUrCLKhWiZNN9Z1KPxo_sdWqMyT6VQ", "POPS Kids (9.71M - 7,085 videos)", 9710000], ["9eImSN36XK8fzHXrhkQQSCvMS65m5Gc4I_Og", "NTN Vlogs (8.1M - 329 videos)", 8100000], ["_CdUiZZ3tctayx9h9Lr659L-jhMwfOWr4Dyg", "B\u00e9 B\u00fan - B\u00e9 B\u1eafp (~7M - 806 videos)", 7484216], ["8sMyRtkcbcjP6I1m4dOyUbjs9qMbeixrE8", "Cris Devil Gamer (7.41M - 814 videos)", 7410000], ["_g3IpUaTOU3Ys5ZKQLK-uxOFaPBcsVK1GAlg", "POPS MUSIC (7.29M - 25,462 videos)", 7290000], ["9_5C7nXoG-wA7O4ipOvuy8Luiso7_NhhAIRA", "Th\u01a1 Nguy\u1ec5n (6.91M - 895 videos)", 6910000], ["9-NyoEhefShF17qFmadGhwnbKoflF0QnLePg", "Vie Channel - HTV2 (6.32M - 6,358 videos)", 6320000], ["-bxtbb1fuWGHZTuftKpUV5lcdAjphpNU2qqg", "K\u00eanh Thi\u1ebfu Nhi - BHMEDIA (6.06M - 6,078 videos)", 6060000], ["-jyIWkiylJ-diQFBX30bjOIwyavNi8WCCv7g", "Kid Studio (5.8M - 1,199 videos)", 5800000], ["_PjtqAAR0YGbfsWlae7HufAEIAQVWaofY4MA", "Vanh Leg (5.78M - 62 videos)", 5780000], ["8QGTW3gMAN3s_devNGhlzjBO9eCRPGTg0iUQ", "S\u01a1n T\u00f9ng M-TP Official (5.78M - 81 videos)", 5780000], ["-iEIqCCsTLm2Pmwt1Fxg_XMvXJWG2nOeLuuA", "HTV Entertainment (5.59M - 13,372 videos)", 5590000], ["-igyhfOt6nYOCH-UvX0MNEXzOycZfpygPW0g", "iGAMING TV (5.43M - 43 videos)", 5430000], ["_Ne6L8QX0MN95BZUGej2SnyZTojn8kwsXKuQ", "SITCOM FOR LIFE (~5M - 838 videos)", 5413808], ["_9lbpu5KnhWGkt9v9T5Ir04uTBUYumdCEV-w", "\u0110\u00d4NG T\u00c2Y PROMOTION OFFICIAL (5.41M - 7,430 videos)", 5410000], ["8fNby9Bb2Tu3PQLq8pqJ7F6Y-NskoXPKhCYQ", "KN Channel (5.29M - 769 videos)", 5290000], ["_dHHZLx0FSy6RZng2gDMtzBHA-d-RcDN_ysg", "Ghi\u1ec1n M\u00ec G\u00f5 (5.25M - 588 videos)", 5250000], ["9X2C9dgDeprBbk4KF_ppfa6T_j5FCP_VZGbQ", "DIEN QUAN Comedy / H\u00e0i (5.1M - 3,490 videos)", 5100000], ["9rb7L_QB4DGrRn84N0a3UISG1lEBKG2aGrgw", "PHD Troll (4.79M - 515 videos)", 4790000], ["9EcsFrI3zv-wcTcJikbucm_2kiSNQ_dWVfeA", "ChiChi TV (4.76M - 957 videos)", 4760000], ["_KivoWaiCvPG5Xv96cW6n0qQIswBGstQHI5g", "Hau Hoang (4.68M - 54 videos)", 4680000], ["-q4AyEVtgXYaU2GRBWMmTjSIj7RChDRrJ5FA", "K-ICM Official (4.42M - 67 videos)", 4420000], ["-Gv-frItGOhqfeIS9t-BYwtaJziX6MoALlpA", "DIEN QUAN Entertainment / Gi\u1ea3i Tr\u00ed (4.41M - 5,788 videos)", 4410000], ["9UlxHcihUOyCUgsaJqPy7nc4X3o1OilGANEQ", "Ghi\u1ec1n Phim (~4M - 195 videos)", 4253991], ["-yypMauJhkKN3SG-l4waTawzONLMYqQPvJhA", "MISTHY TV (4.24M - 1,160 videos)", 4240000], ["92dLbAXzbI2MN5NNW5VWJ7y4F3cyqYxy1VJw", "Oops Banana (4.19M - 1,208 videos)", 4190000], ["9gPg3SqEtZGx9M4QHTLhauMnKjwbisFisl", "SlenderMan\u2122 (3.99M - 1,094 videos)", 3990000], ["_2aKnrfrKpFB98vEYeCzOfjFO-g5mAXuQIrA", "Mobile MOBA Vi\u1ec7t (3.97M - 3,535 videos)", 3970000], ["_EH-iblXhxv1DOaKaksaakA5HL-dLi2aW1ug", "Truyen Hinh Vinh Long (3.8M - 15,049 videos)", 3800000], ["8yuC7RbanKj-R3GDTwZ6SsjFKeBG3zSRJ2hw", "THVL Gi\u1ea3i Tr\u00ed (3.78M - 18,758 videos)", 3780000], ["9Sg_bsAWDf8bYC-gnjvXGHQzd5WIBm602VnQ", "LA LA SCHOOL (3.74M - 607 videos)", 3740000], ["9T77D-2g5LW0J4w9daHWxT2QXc_N1VNgdPSA", "TXT (3.72M - 3,363 videos)", 3720000], ["8vljStFWCOPzRiBqCVsp0H52KG5CxCHXaHvA", "H\u00e0nh Tinh \u0110\u1ed3 Ch\u01a1i - Toy Planet (3.71M - 689 videos)", 3710000], ["8n9hibOl7Q7DuWriR5RzdTOUbxN_YgXKM_BQ", "Garena Li\u00ean Qu\u00e2n Mobile (3.66M - 3,278 videos)", 3660000], ["8xQdV1ux__wJ451Yphk95nHp5RbwtnUKV-uQ", "PHIM C\u1ea4P 3 (3.58M - 326 videos)", 3580000], ["_94yL3Ix6zWobVlquf0vxDUUGw6oAismTreg", "VN Children\u2019s Music (~4M - 256 videos)", 3517910], ["9P2-80d9aQp7RRPFkMA4jTugf0vto-2rVbpA", "YEAH1TV (3.45M - 7,922 videos)", 3450000], ["9Z4RQou6p3nq8vSakNi1PdoVZF2ta3jrjB1w", "Bom Bom Songs (3.37M - 179 videos)", 3370000], ["_l5-mLJ_KySkJ4ngKKa9jsRa-gCP6UTCk1kA", "B\u00e0 T\u00e2n Vlog (3.33M - 124 videos)", 3330000], ["8lATEg568WOzdO3y9KCDmFOAXnIW4sSL20iw", "PEWPEW (3.31M - 2,260 videos)", 3310000], ["8DG8q2p_WPmDVIA63h_rpSlN0IPh85qCFfOw", "RedhoodVN (3.31M - 275 videos)", 3310000], ["_TvrRRb8ttbKz9rjr2MHgIEUvJapZykByubA", "BIBI TV (3.3M - 775 videos)", 3300000], ["8jqZYHAsnR10vNUQcf9z5_2OWGe2eTKvECKQ", "KhangProFilm (3.24M - 364 videos)", 3240000], ["8eFzxM_-BZPihvYwbXcenIRW1b1TmfP_nz8Q", "SVM SCHOOL (3.14M - 363 videos)", 3140000], ["9ckflfD9hPws7L8fPAfJDv3nLMVbSAIslYMg", "Xavi ABCKids (3.12M - 190 videos)", 3120000], ["_AecHHp7-CgHeiW8UGjBwVO8yEVEs73uorUw", "Phim HOT TK-L (3.07M - 4,523 videos)", 3070000], ["9YfrBYLiu-4HmbGIbeDUp_6234ENQyxD1aYA", "Vietnam Esports TV (2.95M - 8,957 videos)", 2950000], ["9XGyX_5xLkSniTbn9KCrpl_c_LhKqpn-hUTQ", "M\u1ec1u Channel (2.95M - 373 videos)", 2950000], ["8xxA0IABHDbMRLpsXdyLYT178Xf0aFVCRO_w", "ANTV - Truy\u1ec1n h\u00ecnh C\u00f4ng an Nh\u00e2n d\u00e2n (2.92M - 28,971 videos)", 2920000], ["9PdW42vgPsipzOi9GPDY97QDH9Y-ztYoObdQ", "DIEN QUAN Film (2.91M - 2,972 videos)", 2910000], ["8lSyop1MWWLsOnN7n01uDM5GlfxO901Vddxw", "AS Mobile (2.89M - 1,801 videos)", 2890000], ["_fJLpO5qeQvNOAnvvVzGBnK2y883z7U2amHw", "L\u00e2m Vlog (2.87M - 509 videos)", 2870000], ["8Q3J2Q8QIh5xLn4GS9CMX1jIr-4WvD0hi_-Q", "Susi kids TV (2.86M - 818 videos)", 2860000], ["-2UsuMv_XqQ9TsNOqcn1jfXtdV4szs0h5HMg", "My Tam (~3M - 371 videos)", 2835681], ["_jFTiXGa0JS648LRrFE8VaOejbssQp6_6WoQ", "Vlad v\u00e0 Nikita (2.83M - 163 videos)", 2830000], ["-PJpx0wjvYvwKwb82v9LjJybyBR6EMyAbdPA", "AnAn ToysReview TV (2.83M - 199 videos)", 2830000], ["-KcxPPYyp0hIBTLJf5ODGEjtlAKeWInuX6PQ", "Nguy\u1ec5n H\u01b0\u01a1ng Ly Official (2.8M - 67 videos)", 2800000], ["_ztg2jWWL9vorFdThFLTVj0e5n3fnXSmKSuQ", "Phim Hay \u0110i\u1ec7n \u1ea2nh (2.72M - 4,121 videos)", 2720000], ["-Fms3FNCJME0aBv7rparg1399h4yqTS2PaCg", "THVL Phim (2.69M - 11,958 videos)", 2690000], ["-UN0LsqvJa0l-SFEqUADNP1msb22Ualce1xQ", "5 PH\u00daT TH\u1ee6 C\u00d4NG (2.65M - 1,596 videos)", 2650000], ["-q9OhaeXnhL-6aMLtBsZc-fzo0Aaq9RGDo3Q", "ViruSs (2.65M - 2,414 videos)", 2650000], ["-e_GlZuPbGHV4xeKtog-P9ocfJB1HPJu5oXQ", "YEAH1 MUSIC (2.62M - 3,885 videos)", 2620000], ["_lnXp6n2Pjy9p5u_kv9rr0K9gqm7fm0idb6Q", "Nam Vi\u1ec7t Music (2.61M - 992 videos)", 2610000], ["903mM6AiNyu7JFQdAszZmA45rhHSl4NEKeIw", "\u1ea8m Th\u1ef1c Tam Mao (2.59M - 252 videos)", 2590000], ["-XuEqjJWBlNzNxuyHeoJJnnDcF2Y-sWkQzDg", "Phim H\u00e0i - B\u00ecnh Minh Film (2.58M - 355 videos)", 2580000], ["-Hz3c26XS7uQ-qGu0IzwK8nxy9Ub4s3WcgwA", "Gi\u1ecdng Ca \u0110\u1ec3 \u0110\u1eddi (2.57M - 1,654 videos)", 2570000], ["9Vo6B-j-7s4tcTexburYgnYB0rnH9Jt1JPfw", "PinPin TV (~3M - 451 videos)", 2527263], ["9DLL-Gz2MEc7BIsqv5Vrf7WI0Mvn8bTM4Owg", "Zing MP3 (2.49M - 1,622 videos)", 2490000], ["8AJWmJvtZ2y3qm3GHJHOW_KZkYtE5DRE-3TA", "Ti\u1ec1n Zombie v4 (2.39M - 2,111 videos)", 2390000], ["9_ST5aF1TkrpN8JHx-yGU2vtCym983yYDyOw", "MCVMedia (2.39M - 10,044 videos)", 2390000], ["_FIFawXDXwtFriUNlj5YWjalI-CmIVtgeXvA", "HOA BAN FOOD (2.37M - 543 videos)", 2370000], ["_X_bsF0dt91ltgWQHnPrjqQGko2AN_szMy2A", "TR\u1ea4N TH\u00c0NH TOWN (2.37M - 283 videos)", 2370000], ["-dtu4lY-V75gZ2iTDyvbO3AHAhlww98pXu5g", "Schannel (2.36M - 8,928 videos)", 2360000], ["_XCrZv9BJvkrd5pHpNRQO809e01Q34_fFmEA", "XEM G\u00cc H\u00d4M NAY (2.32M - 774 videos)", 2320000], ["_c3SIfRPuEaP18XAjUy8aVCiiULJkgiq9-LA", "ToyTV - Kh\u1ee7ng long vui nh\u1ed9n (2.27M - 486 videos)", 2270000], ["-eAnc-VSMUnq1EgFIyhV_2TtiywXKlHUOjpg", "Ohsusu TV (2.27M - 589 videos)", 2270000], ["8rBgf4hGYn5kiHpDT4J3JolRs8r81BgCzK1w", "Khoa Pug (2.26M - 333 videos)", 2260000], ["_uINf8ZyvaZTcwayyuGmsQ2mkFUrhoew_3dw", "H&M Channel (2.24M - 240 videos)", 2240000], ["8bysHfQsqXguOb5lbShvsDypFGSfHrYJl51Q", "Tony TV (2.21M - 447 videos)", 2210000], ["_LYRh3ERE29yTDeCRQ6IP0OrCZsUxdNCi9zQ", "Thu Trang Official (2.2M - 143 videos)", 2200000], ["9JFKvxJM3n7uu_y4-upN-S55GIozYdBY0zsQ", "Garena Free Fire Vietnam (2.2M - 713 videos)", 2200000], ["_B-Req_mrpUmlM2dKf3ZLHvfKXrlodNTDt_A", "LaLa Kids TV (~2M - 109 videos)", 2182087], ["9Hus6QpRAAGfmH2c_g_D4jPUjNCxcnk0k5lg", "\u0110\u1eadu Ph\u1ed9ng TV (2.17M - 113 videos)", 2170000], ["-CDzTWWrwwqlVZ7BnxTJmgqNuazTiCl-H-", "H\u1ed3ng \u00c2n Entertainment (~2M - 486 videos)", 2142049], ["8S-fSu80UP1_EWtXRqGfIh4RLrFoBdsguZjA", "An Ninh Th\u1ebf Gi\u1edbi (2.14M - 9,109 videos)", 2140000], ["8S7z8lfV31j4sFgUVOkG_ejTpPMYemDHUQyg", "KH\u01af\u01a0NG D\u1eeaA CHANNEL (2.13M - 1,450 videos)", 2130000], ["83yMDyHO_jZK19c0j-6BEWBN9mitrI3p43Hw", "K\u00caNH VTC1 (2.1M - 44,987 videos)", 2100000], ["-pAykA_QI3YqC7hWUpJ864YWekGFUidfHv8g", "CulyTV (~2M - 1,405 videos)", 2099903], ["-ihU6yznRSxAMVixJmyqeE8wJQM7SGXhz4_g", "Nh\u1ea1c Thi\u1ebfu Nhi (~2M - 199 videos)", 2086138], ["8ibskGUdop__eq73K4JrhvLs8I2Eq2r7Rl1w", "NCT Vlogs (2.08M - 151 videos)", 2080000], ["8ZdqJzT07KY91IpIbL2FfKk9uSzhEQ0hfh_A", "Phim H\u00e0i Hay - Phim H\u00e0i Vi\u1ec7t (2.07M - 1,134 videos)", 2069999], ["8-NA5kfrPLeaQB4zN0ZBE5oCvBP7TMyGXtfQ", "Chim Xinh Channel (2.07M - 1,891 videos)", 2069999], ["99RR3CxLJyrEVhm8cplh4DLoB58UC3qfKqBQ", "MixiGaming (2.05M - 636 videos)", 2049999], ["-AFzRi5u21VvtbOyPO6FtCJszYu6ELtIyFwg", "Thi\u1ec7u Nh\u1ea5t Nguy\u00ean (2.05M - 226 videos)", 2049999], ["_8-iCPom_7IJiUDxGhUlRjV7wuFK6WmmKNww", "Phim Si\u00eau Nh\u00e2n Nh\u1eadt B\u1ea3n (2.05M - 1,255 videos)", 2049999], ["-Wt2w4Cu6t2U4Nnw_4TCMVDskFWFC6yYfrcQ", "C\u00e0 Chua \u0110\u1ecf (2.04M - 517 videos)", 2040000], ["-v4dT8YHNztmf2v-RmQzwV7Tu-eY2InJNZNQ", "\u0110\u1ed7 Duy Nam (2.03M - 130 videos)", 2029999], ["_1MzAXH2V9r1Q_Uq90Y0dh23l3hFfFqldmwQ", "Jack & Liam (2.03M - 60 videos)", 2029999], ["9D2UdpUxi6FMSuzOb15vvYy6hWwyx3sxOqNQ", "\u0110EN TV (2.03M - 60 videos)", 2029999]]};
+
+
+    $('#query_data').click(function(){
+        var btn = this;
+        $(btn).prop('disabled', true);
+        $('#message').html('Requesting data ....');
+
+        setTimeout(function () {
+            $(btn).prop('disabled', false);
+        }, 1000);
+
+        var by_category = $('#by_category').val();
+        var by_value = $('#by_value').val();
+
+
+        $.ajax({
+            type: 'GET',
+            dataType: 'json',
+            url: '/assets/data/channels/' + by_category + '/' + by_value,
+
+            success: function (res) {
+                if (res) {
+                    var table = $('#channel_query').DataTable();
+                    table.clear();
+                    table.rows.add(formatDatatable(res.data));
+                    table.search('').draw();
+                }
+                $('#message').html('Category: ' + by_category + '. Value: ' + by_value)
+            },
+            error: function(xhr, status, error){
+                console.log(error);
+                $('#message').html(error)
+            },
+        });
+    });
+
+
+    var formatDatatable = function (data) {
+        var results = [];
+
+        var id = 1;
+        data.forEach(function (item) {
+            var data = {};
+            data['id'] = id++;
+            avatar = 'https://yt3.ggpht.com/a/AGF-l7' + item[0] + '=s100-c-k-c0xffffffff-no-rj-mo';
+            data['thumbnail'] = '<br><img class="lazy" height="80" width="80" data-original="' + avatar + '"><br>';
+            data['name'] = item[1];
+            data['value'] = item[2];
+
+            results.push(data);
+        });
+
+        return results;
+    };
+
+    $('#channel_query').DataTable({
+        "aaData"      : formatDatatable(_sample.data),
+        "processing": true,
+        "serverSide": false,
+        "drawCallback": function () {
+            $("img.lazy").lazyload();
+        },
+        "bAutoWidth": false,
+        "order": [[0, "asc"]],
+        "aoColumns": [
+            {"sWidth": "5%", "sTitle": "ID", "mDataProp": "id"},
+            {"sWidth": "5%", "sTitle": "Thumbnail", "mDataProp": "thumbnail"},
+            {"sWidth": "80%", "sTitle": "Name", "mDataProp": "name"},
+            {"sWidth": "10%", "sTitle": "Value", "mDataProp": "value"},
+        ],
+        "searchDelay": 350,
+        "pageLength": 30,
+        "lengthMenu": [[10, 20, 30, 1000], [10, 20, 30, 1000]],
+    });
+</script>
+
+
+    </div>
+</div>
+    </div>
+
+    
+
+    <div id="footer" class="page__footer">
+      <footer>
+        <!-- start custom footer snippets -->
+
+<!-- end custom footer snippets -->
+        <div class="page__footer-follow">
+  <ul class="social-icons">
+
+    
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+    
+
+  </ul>
+</div>
+
+<div class="page__footer-copyright">&copy; 2019 Wakemei.</div>
+
+      </footer>
+    </div>
+
+    <style>
+      .sidebar__top {
+        position: fixed;
+        bottom: 1.5em;
+        right: 2em;
+        z-index: 10;
+      }
+    </style>
+    <aside class="sidebar__top">
+      <a href="#site-nav"> <i class="fa fa-angle-double-up fa-2x"></i></a>
+    </aside>
+
+  </body>
+</html>

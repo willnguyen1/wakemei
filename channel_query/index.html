@@ -1,0 +1,335 @@
+<!doctype html>
+<!--
+  Minimal Mistakes Jekyll Theme 4.17.2 by Michael Rose
+  Copyright 2013-2019 Michael Rose - mademistakes.com | @mmistakes
+  Free for personal and commercial use under the MIT license
+  https://github.com/mmistakes/minimal-mistakes/blob/master/LICENSE
+-->
+<html lang="en" class="no-js">
+  <head>
+    <meta charset="utf-8">
+
+<!-- begin _includes/seo.html --><title>Channel Query - Analysis</title>
+<meta name="description" content="EDA, ML, Data Mining">
+
+
+  <meta name="author" content="Will Nguyen">
+
+
+<meta property="og:type" content="website">
+<meta property="og:locale" content="en_US">
+<meta property="og:site_name" content="Analysis">
+<meta property="og:title" content="Channel Query">
+<meta property="og:url" content="https://wakemei.com/channel_query/">
+
+
+
+
+
+
+
+
+
+
+
+
+  
+
+  
+
+
+<link rel="canonical" href="https://wakemei.com/channel_query/">
+
+
+
+
+<script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    
+      "@type": "Person",
+      "name": "Wakemei",
+      "url": "https://wakemei.com/"
+    
+  }
+</script>
+
+
+
+
+
+
+<!-- end _includes/seo.html -->
+
+
+<link href="/feed.xml" type="application/atom+xml" rel="alternate" title="Analysis Feed">
+
+<!-- https://t.co/dKP3o1e -->
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<script>
+  document.documentElement.className = document.documentElement.className.replace(/\bno-js\b/g, '') + ' js ';
+</script>
+
+<!-- For all browsers -->
+<link rel="stylesheet" href="/assets/css/main.css">
+
+<!--[if IE]>
+  <style>
+    /* old IE unsupported flexbox fixes */
+    .greedy-nav .site-title {
+      padding-right: 3em;
+    }
+    .greedy-nav button {
+      position: absolute;
+      top: 0;
+      right: 0;
+      height: 100%;
+    }
+  </style>
+<![endif]-->
+
+
+
+    <!-- start custom head snippets -->
+
+<!-- insert favicons. use https://realfavicongenerator.net/ -->
+
+<!-- end custom head snippets -->
+
+  </head>
+
+  <body class="layout--channel_query">
+    <nav class="skip-links">
+  <h2 class="screen-reader-text">Skip links</h2>
+  <ul>
+    <li><a href="#site-nav" class="screen-reader-shortcut">Skip to primary navigation</a></li>
+    <li><a href="#main" class="screen-reader-shortcut">Skip to content</a></li>
+    <li><a href="#footer" class="screen-reader-shortcut">Skip to footer</a></li>
+  </ul>
+</nav>
+
+    <!--[if lt IE 9]>
+<div class="notice--danger align-center" style="margin: 0;">You are using an <strong>outdated</strong> browser. Please <a href="https://browsehappy.com/">upgrade your browser</a> to improve your experience.</div>
+<![endif]-->
+
+    
+
+<div class="masthead">
+  <div class="masthead__inner-wrap">
+    <div class="masthead__menu">
+      <nav id="site-nav" class="greedy-nav">
+        
+        <a class="site-title" href="/">
+          Analysis
+          
+        </a>
+        <ul class="visible-links"></ul>
+        
+        <button class="greedy-nav__toggle hidden" type="button">
+          <span class="visually-hidden">Toggle menu</span>
+          <div class="navicon"></div>
+        </button>
+        <ul class="hidden-links hidden"></ul>
+      </nav>
+    </div>
+  </div>
+</div>
+
+
+    <div class="initial-content">
+      
+
+<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+<link rel="stylesheet" href="https://cdn.datatables.net/1.10.20/css/dataTables.bootstrap.min.css">
+<link rel="stylesheet" href="https://cdn.datatables.net/1.10.20/css/jquery.dataTables.min.css">
+
+
+<script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.lazyload/1.9.1/jquery.lazyload.min.js"></script>
+<script src="https://cdn.datatables.net/1.10.20/js/jquery.dataTables.min.js"></script>
+<script src="https://cdn.datatables.net/1.10.20/js/dataTables.bootstrap.min.js"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+
+<style>
+    .float-left {
+        float: left
+    }
+</style>
+<div class="row">
+    <hr>
+    <h1>II. Tool for query top channels</h1>
+    <p>Select category or value, and click search</p>
+
+
+    <label for="by_category" class="float-left">Category: </label>
+    <span class="float-left">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span>
+    <select name="by_category" id="by_category" class="float-left">
+        <option value="any">Any</option>
+        <option value="people_blogs">People & Blogs</option>
+        <option value="entertainment">Entertainment</option>
+        <option value="music">Music</option>
+        <option value="gaming">Gaming</option>
+        <option value="film_animation">Film & Animation</option>
+        <option value="education">Education</option>
+        <option value="howto_style">Howto & Style</option>
+        <option value="news_politics">News & Politics</option>
+        <option value="autos_vehicles">Autos & Vehicles</option>
+        <option value="science_technology">Science & Technology</option>
+        <option value="travel_events">Travel & Events</option>
+        <option value="sports">Sports</option>
+        <option value="comedy">Comedy</option>
+        <option value="pets_animals">Pets & Animals</option>
+        <option value="nonprofits_activism">Nonprofits & Activism</option>
+    </select>
+    <span class="float-left">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span>
+
+    <label for="by_value" class="float-left">Value: </label>
+    <span class="float-left">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span>
+
+    <select name="by_value" id="by_value" class="float-left">
+        <option value="subscribers_infer">Subscribers</option>
+        <option value="view_count">View Count</option>
+        <option value="r_view_p_vid">View / Video</option>
+        <option value="r_view_p_joined">View / Joined</option>
+    </select>
+    <span class="float-left">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span>
+
+    <button class="btn btn--primary" id="query_data">Search</button>
+
+</div>
+
+<br><br>
+<hr>
+<span id="message"></span>
+<table id="channel_query"></table>
+
+<script>
+    var _sample = {"data": [["_UdIvyF6KtJ7EmbinWeu3gbOCZ9yJyB8RGGw", "FAP TV (10.3M - 447 videos)", 10300000], ["-3fBeacUrCLKhWiZNN9Z1KPxo_sdWqMyT6VQ", "POPS Kids (9.71M - 7,085 videos)", 9710000], ["9eImSN36XK8fzHXrhkQQSCvMS65m5Gc4I_Og", "NTN Vlogs (8.1M - 329 videos)", 8100000], ["_CdUiZZ3tctayx9h9Lr659L-jhMwfOWr4Dyg", "B\u00e9 B\u00fan - B\u00e9 B\u1eafp (~7M - 806 videos)", 7484216], ["8sMyRtkcbcjP6I1m4dOyUbjs9qMbeixrE8", "Cris Devil Gamer (7.41M - 814 videos)", 7410000], ["_g3IpUaTOU3Ys5ZKQLK-uxOFaPBcsVK1GAlg", "POPS MUSIC (7.29M - 25,462 videos)", 7290000], ["9_5C7nXoG-wA7O4ipOvuy8Luiso7_NhhAIRA", "Th\u01a1 Nguy\u1ec5n (6.91M - 895 videos)", 6910000], ["9-NyoEhefShF17qFmadGhwnbKoflF0QnLePg", "Vie Channel - HTV2 (6.32M - 6,358 videos)", 6320000], ["-bxtbb1fuWGHZTuftKpUV5lcdAjphpNU2qqg", "K\u00eanh Thi\u1ebfu Nhi - BHMEDIA (6.06M - 6,078 videos)", 6060000], ["-jyIWkiylJ-diQFBX30bjOIwyavNi8WCCv7g", "Kid Studio (5.8M - 1,199 videos)", 5800000], ["_PjtqAAR0YGbfsWlae7HufAEIAQVWaofY4MA", "Vanh Leg (5.78M - 62 videos)", 5780000], ["8QGTW3gMAN3s_devNGhlzjBO9eCRPGTg0iUQ", "S\u01a1n T\u00f9ng M-TP Official (5.78M - 81 videos)", 5780000], ["-iEIqCCsTLm2Pmwt1Fxg_XMvXJWG2nOeLuuA", "HTV Entertainment (5.59M - 13,372 videos)", 5590000], ["-igyhfOt6nYOCH-UvX0MNEXzOycZfpygPW0g", "iGAMING TV (5.43M - 43 videos)", 5430000], ["_Ne6L8QX0MN95BZUGej2SnyZTojn8kwsXKuQ", "SITCOM FOR LIFE (~5M - 838 videos)", 5413808], ["_9lbpu5KnhWGkt9v9T5Ir04uTBUYumdCEV-w", "\u0110\u00d4NG T\u00c2Y PROMOTION OFFICIAL (5.41M - 7,430 videos)", 5410000], ["8fNby9Bb2Tu3PQLq8pqJ7F6Y-NskoXPKhCYQ", "KN Channel (5.29M - 769 videos)", 5290000], ["_dHHZLx0FSy6RZng2gDMtzBHA-d-RcDN_ysg", "Ghi\u1ec1n M\u00ec G\u00f5 (5.25M - 588 videos)", 5250000], ["9X2C9dgDeprBbk4KF_ppfa6T_j5FCP_VZGbQ", "DIEN QUAN Comedy / H\u00e0i (5.1M - 3,490 videos)", 5100000], ["9rb7L_QB4DGrRn84N0a3UISG1lEBKG2aGrgw", "PHD Troll (4.79M - 515 videos)", 4790000], ["9EcsFrI3zv-wcTcJikbucm_2kiSNQ_dWVfeA", "ChiChi TV (4.76M - 957 videos)", 4760000], ["_KivoWaiCvPG5Xv96cW6n0qQIswBGstQHI5g", "Hau Hoang (4.68M - 54 videos)", 4680000], ["-q4AyEVtgXYaU2GRBWMmTjSIj7RChDRrJ5FA", "K-ICM Official (4.42M - 67 videos)", 4420000], ["-Gv-frItGOhqfeIS9t-BYwtaJziX6MoALlpA", "DIEN QUAN Entertainment / Gi\u1ea3i Tr\u00ed (4.41M - 5,788 videos)", 4410000], ["9UlxHcihUOyCUgsaJqPy7nc4X3o1OilGANEQ", "Ghi\u1ec1n Phim (~4M - 195 videos)", 4253991], ["-yypMauJhkKN3SG-l4waTawzONLMYqQPvJhA", "MISTHY TV (4.24M - 1,160 videos)", 4240000], ["92dLbAXzbI2MN5NNW5VWJ7y4F3cyqYxy1VJw", "Oops Banana (4.19M - 1,208 videos)", 4190000], ["9gPg3SqEtZGx9M4QHTLhauMnKjwbisFisl", "SlenderMan\u2122 (3.99M - 1,094 videos)", 3990000], ["_2aKnrfrKpFB98vEYeCzOfjFO-g5mAXuQIrA", "Mobile MOBA Vi\u1ec7t (3.97M - 3,535 videos)", 3970000], ["_EH-iblXhxv1DOaKaksaakA5HL-dLi2aW1ug", "Truyen Hinh Vinh Long (3.8M - 15,049 videos)", 3800000], ["8yuC7RbanKj-R3GDTwZ6SsjFKeBG3zSRJ2hw", "THVL Gi\u1ea3i Tr\u00ed (3.78M - 18,758 videos)", 3780000], ["9Sg_bsAWDf8bYC-gnjvXGHQzd5WIBm602VnQ", "LA LA SCHOOL (3.74M - 607 videos)", 3740000], ["9T77D-2g5LW0J4w9daHWxT2QXc_N1VNgdPSA", "TXT (3.72M - 3,363 videos)", 3720000], ["8vljStFWCOPzRiBqCVsp0H52KG5CxCHXaHvA", "H\u00e0nh Tinh \u0110\u1ed3 Ch\u01a1i - Toy Planet (3.71M - 689 videos)", 3710000], ["8n9hibOl7Q7DuWriR5RzdTOUbxN_YgXKM_BQ", "Garena Li\u00ean Qu\u00e2n Mobile (3.66M - 3,278 videos)", 3660000], ["8xQdV1ux__wJ451Yphk95nHp5RbwtnUKV-uQ", "PHIM C\u1ea4P 3 (3.58M - 326 videos)", 3580000], ["_94yL3Ix6zWobVlquf0vxDUUGw6oAismTreg", "VN Children\u2019s Music (~4M - 256 videos)", 3517910], ["9P2-80d9aQp7RRPFkMA4jTugf0vto-2rVbpA", "YEAH1TV (3.45M - 7,922 videos)", 3450000], ["9Z4RQou6p3nq8vSakNi1PdoVZF2ta3jrjB1w", "Bom Bom Songs (3.37M - 179 videos)", 3370000], ["_l5-mLJ_KySkJ4ngKKa9jsRa-gCP6UTCk1kA", "B\u00e0 T\u00e2n Vlog (3.33M - 124 videos)", 3330000], ["8lATEg568WOzdO3y9KCDmFOAXnIW4sSL20iw", "PEWPEW (3.31M - 2,260 videos)", 3310000], ["8DG8q2p_WPmDVIA63h_rpSlN0IPh85qCFfOw", "RedhoodVN (3.31M - 275 videos)", 3310000], ["_TvrRRb8ttbKz9rjr2MHgIEUvJapZykByubA", "BIBI TV (3.3M - 775 videos)", 3300000], ["8jqZYHAsnR10vNUQcf9z5_2OWGe2eTKvECKQ", "KhangProFilm (3.24M - 364 videos)", 3240000], ["8eFzxM_-BZPihvYwbXcenIRW1b1TmfP_nz8Q", "SVM SCHOOL (3.14M - 363 videos)", 3140000], ["9ckflfD9hPws7L8fPAfJDv3nLMVbSAIslYMg", "Xavi ABCKids (3.12M - 190 videos)", 3120000], ["_AecHHp7-CgHeiW8UGjBwVO8yEVEs73uorUw", "Phim HOT TK-L (3.07M - 4,523 videos)", 3070000], ["9YfrBYLiu-4HmbGIbeDUp_6234ENQyxD1aYA", "Vietnam Esports TV (2.95M - 8,957 videos)", 2950000], ["9XGyX_5xLkSniTbn9KCrpl_c_LhKqpn-hUTQ", "M\u1ec1u Channel (2.95M - 373 videos)", 2950000], ["8xxA0IABHDbMRLpsXdyLYT178Xf0aFVCRO_w", "ANTV - Truy\u1ec1n h\u00ecnh C\u00f4ng an Nh\u00e2n d\u00e2n (2.92M - 28,971 videos)", 2920000], ["9PdW42vgPsipzOi9GPDY97QDH9Y-ztYoObdQ", "DIEN QUAN Film (2.91M - 2,972 videos)", 2910000], ["8lSyop1MWWLsOnN7n01uDM5GlfxO901Vddxw", "AS Mobile (2.89M - 1,801 videos)", 2890000], ["_fJLpO5qeQvNOAnvvVzGBnK2y883z7U2amHw", "L\u00e2m Vlog (2.87M - 509 videos)", 2870000], ["8Q3J2Q8QIh5xLn4GS9CMX1jIr-4WvD0hi_-Q", "Susi kids TV (2.86M - 818 videos)", 2860000], ["-2UsuMv_XqQ9TsNOqcn1jfXtdV4szs0h5HMg", "My Tam (~3M - 371 videos)", 2835681], ["_jFTiXGa0JS648LRrFE8VaOejbssQp6_6WoQ", "Vlad v\u00e0 Nikita (2.83M - 163 videos)", 2830000], ["-PJpx0wjvYvwKwb82v9LjJybyBR6EMyAbdPA", "AnAn ToysReview TV (2.83M - 199 videos)", 2830000], ["-KcxPPYyp0hIBTLJf5ODGEjtlAKeWInuX6PQ", "Nguy\u1ec5n H\u01b0\u01a1ng Ly Official (2.8M - 67 videos)", 2800000], ["_ztg2jWWL9vorFdThFLTVj0e5n3fnXSmKSuQ", "Phim Hay \u0110i\u1ec7n \u1ea2nh (2.72M - 4,121 videos)", 2720000], ["-Fms3FNCJME0aBv7rparg1399h4yqTS2PaCg", "THVL Phim (2.69M - 11,958 videos)", 2690000], ["-UN0LsqvJa0l-SFEqUADNP1msb22Ualce1xQ", "5 PH\u00daT TH\u1ee6 C\u00d4NG (2.65M - 1,596 videos)", 2650000], ["-q9OhaeXnhL-6aMLtBsZc-fzo0Aaq9RGDo3Q", "ViruSs (2.65M - 2,414 videos)", 2650000], ["-e_GlZuPbGHV4xeKtog-P9ocfJB1HPJu5oXQ", "YEAH1 MUSIC (2.62M - 3,885 videos)", 2620000], ["_lnXp6n2Pjy9p5u_kv9rr0K9gqm7fm0idb6Q", "Nam Vi\u1ec7t Music (2.61M - 992 videos)", 2610000], ["903mM6AiNyu7JFQdAszZmA45rhHSl4NEKeIw", "\u1ea8m Th\u1ef1c Tam Mao (2.59M - 252 videos)", 2590000], ["-XuEqjJWBlNzNxuyHeoJJnnDcF2Y-sWkQzDg", "Phim H\u00e0i - B\u00ecnh Minh Film (2.58M - 355 videos)", 2580000], ["-Hz3c26XS7uQ-qGu0IzwK8nxy9Ub4s3WcgwA", "Gi\u1ecdng Ca \u0110\u1ec3 \u0110\u1eddi (2.57M - 1,654 videos)", 2570000], ["9Vo6B-j-7s4tcTexburYgnYB0rnH9Jt1JPfw", "PinPin TV (~3M - 451 videos)", 2527263], ["9DLL-Gz2MEc7BIsqv5Vrf7WI0Mvn8bTM4Owg", "Zing MP3 (2.49M - 1,622 videos)", 2490000], ["8AJWmJvtZ2y3qm3GHJHOW_KZkYtE5DRE-3TA", "Ti\u1ec1n Zombie v4 (2.39M - 2,111 videos)", 2390000], ["9_ST5aF1TkrpN8JHx-yGU2vtCym983yYDyOw", "MCVMedia (2.39M - 10,044 videos)", 2390000], ["_FIFawXDXwtFriUNlj5YWjalI-CmIVtgeXvA", "HOA BAN FOOD (2.37M - 543 videos)", 2370000], ["_X_bsF0dt91ltgWQHnPrjqQGko2AN_szMy2A", "TR\u1ea4N TH\u00c0NH TOWN (2.37M - 283 videos)", 2370000], ["-dtu4lY-V75gZ2iTDyvbO3AHAhlww98pXu5g", "Schannel (2.36M - 8,928 videos)", 2360000], ["_XCrZv9BJvkrd5pHpNRQO809e01Q34_fFmEA", "XEM G\u00cc H\u00d4M NAY (2.32M - 774 videos)", 2320000], ["_c3SIfRPuEaP18XAjUy8aVCiiULJkgiq9-LA", "ToyTV - Kh\u1ee7ng long vui nh\u1ed9n (2.27M - 486 videos)", 2270000], ["-eAnc-VSMUnq1EgFIyhV_2TtiywXKlHUOjpg", "Ohsusu TV (2.27M - 589 videos)", 2270000], ["8rBgf4hGYn5kiHpDT4J3JolRs8r81BgCzK1w", "Khoa Pug (2.26M - 333 videos)", 2260000], ["_uINf8ZyvaZTcwayyuGmsQ2mkFUrhoew_3dw", "H&M Channel (2.24M - 240 videos)", 2240000], ["8bysHfQsqXguOb5lbShvsDypFGSfHrYJl51Q", "Tony TV (2.21M - 447 videos)", 2210000], ["_LYRh3ERE29yTDeCRQ6IP0OrCZsUxdNCi9zQ", "Thu Trang Official (2.2M - 143 videos)", 2200000], ["9JFKvxJM3n7uu_y4-upN-S55GIozYdBY0zsQ", "Garena Free Fire Vietnam (2.2M - 713 videos)", 2200000], ["_B-Req_mrpUmlM2dKf3ZLHvfKXrlodNTDt_A", "LaLa Kids TV (~2M - 109 videos)", 2182087], ["9Hus6QpRAAGfmH2c_g_D4jPUjNCxcnk0k5lg", "\u0110\u1eadu Ph\u1ed9ng TV (2.17M - 113 videos)", 2170000], ["-CDzTWWrwwqlVZ7BnxTJmgqNuazTiCl-H-", "H\u1ed3ng \u00c2n Entertainment (~2M - 486 videos)", 2142049], ["8S-fSu80UP1_EWtXRqGfIh4RLrFoBdsguZjA", "An Ninh Th\u1ebf Gi\u1edbi (2.14M - 9,109 videos)", 2140000], ["8S7z8lfV31j4sFgUVOkG_ejTpPMYemDHUQyg", "KH\u01af\u01a0NG D\u1eeaA CHANNEL (2.13M - 1,450 videos)", 2130000], ["83yMDyHO_jZK19c0j-6BEWBN9mitrI3p43Hw", "K\u00caNH VTC1 (2.1M - 44,987 videos)", 2100000], ["-pAykA_QI3YqC7hWUpJ864YWekGFUidfHv8g", "CulyTV (~2M - 1,405 videos)", 2099903], ["-ihU6yznRSxAMVixJmyqeE8wJQM7SGXhz4_g", "Nh\u1ea1c Thi\u1ebfu Nhi (~2M - 199 videos)", 2086138], ["8ibskGUdop__eq73K4JrhvLs8I2Eq2r7Rl1w", "NCT Vlogs (2.08M - 151 videos)", 2080000], ["8ZdqJzT07KY91IpIbL2FfKk9uSzhEQ0hfh_A", "Phim H\u00e0i Hay - Phim H\u00e0i Vi\u1ec7t (2.07M - 1,134 videos)", 2069999], ["8-NA5kfrPLeaQB4zN0ZBE5oCvBP7TMyGXtfQ", "Chim Xinh Channel (2.07M - 1,891 videos)", 2069999], ["99RR3CxLJyrEVhm8cplh4DLoB58UC3qfKqBQ", "MixiGaming (2.05M - 636 videos)", 2049999], ["-AFzRi5u21VvtbOyPO6FtCJszYu6ELtIyFwg", "Thi\u1ec7u Nh\u1ea5t Nguy\u00ean (2.05M - 226 videos)", 2049999], ["_8-iCPom_7IJiUDxGhUlRjV7wuFK6WmmKNww", "Phim Si\u00eau Nh\u00e2n Nh\u1eadt B\u1ea3n (2.05M - 1,255 videos)", 2049999], ["-Wt2w4Cu6t2U4Nnw_4TCMVDskFWFC6yYfrcQ", "C\u00e0 Chua \u0110\u1ecf (2.04M - 517 videos)", 2040000], ["-v4dT8YHNztmf2v-RmQzwV7Tu-eY2InJNZNQ", "\u0110\u1ed7 Duy Nam (2.03M - 130 videos)", 2029999], ["_1MzAXH2V9r1Q_Uq90Y0dh23l3hFfFqldmwQ", "Jack & Liam (2.03M - 60 videos)", 2029999], ["9D2UdpUxi6FMSuzOb15vvYy6hWwyx3sxOqNQ", "\u0110EN TV (2.03M - 60 videos)", 2029999]]};
+
+
+    $('#query_data').click(function(){
+        var btn = this;
+        $(btn).prop('disabled', true);
+        $('#message').html('Requesting data ....');
+
+        setTimeout(function () {
+            $(btn).prop('disabled', false);
+        }, 1000);
+
+        var by_category = $('#by_category').val();
+        var by_value = $('#by_value').val();
+
+
+        $.ajax({
+            type: 'GET',
+            dataType: 'json',
+            url: '/assets/data/channels/' + by_category + '/' + by_value,
+
+            success: function (res) {
+                if (res) {
+                    var table = $('#channel_query').DataTable();
+                    table.clear();
+                    table.rows.add(formatDatatable(res.data));
+                    table.search('').draw();
+                }
+                $('#message').html('Category: ' + by_category + '. Value: ' + by_value)
+            },
+            error: function(xhr, status, error){
+                console.log(error);
+                $('#message').html(error)
+            },
+        });
+    });
+
+
+    var formatDatatable = function (data) {
+        var results = [];
+
+        var id = 1;
+        data.forEach(function (item) {
+            var data = {};
+            data['id'] = id++;
+            avatar = 'https://yt3.ggpht.com/a/AGF-l7' + item[0] + '=s100-c-k-c0xffffffff-no-rj-mo';
+            data['thumbnail'] = '<br><img class="lazy" height="80" width="80" data-original="' + avatar + '"><br>';
+            data['name'] = item[1];
+            data['value'] = item[2];
+
+            results.push(data);
+        });
+
+        return results;
+    };
+
+    $('#channel_query').DataTable({
+        "aaData"      : formatDatatable(_sample.data),
+        "processing": true,
+        "serverSide": false,
+        "drawCallback": function () {
+            $("img.lazy").lazyload();
+        },
+        "bAutoWidth": false,
+        "order": [[0, "asc"]],
+        "aoColumns": [
+            {"sWidth": "5%", "sTitle": "ID", "mDataProp": "id"},
+            {"sWidth": "5%", "sTitle": "Thumbnail", "mDataProp": "thumbnail"},
+            {"sWidth": "80%", "sTitle": "Name", "mDataProp": "name"},
+            {"sWidth": "10%", "sTitle": "Value", "mDataProp": "value"},
+        ],
+        "searchDelay": 350,
+        "pageLength": 30,
+        "lengthMenu": [[10, 20, 30, 1000], [10, 20, 30, 1000]],
+    });
+</script>
+
+
+    </div>
+
+    
+
+    <div id="footer" class="page__footer">
+      <footer>
+        <!-- start custom footer snippets -->
+
+<!-- end custom footer snippets -->
+        <div class="page__footer-follow">
+  <ul class="social-icons">
+
+    
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+    
+
+  </ul>
+</div>
+
+<div class="page__footer-copyright">&copy; 2019 Wakemei.</div>
+
+      </footer>
+    </div>
+
+    <style>
+      .sidebar__top {
+        position: fixed;
+        bottom: 1.5em;
+        right: 2em;
+        z-index: 10;
+      }
+    </style>
+    <aside class="sidebar__top">
+      <a href="#site-nav"> <i class="fa fa-angle-double-up fa-2x"></i></a>
+    </aside>
+
+  </body>
+</html>
